@@ -1,0 +1,13 @@
+Consolidate compiler generated dependencies of target test_basic_publisher
+[ 50%] Building CXX object CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In constructor ‘TestBasicPublisher::TestBasicPublisher()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:13:9: error: class ‘TestBasicPublisher’ does not have any field named ‘counter’
+   13 |         counter(0)
+      |         ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In member function ‘void TestBasicPublisher::timer_callback()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:52: error: ‘counter’ was not declared in this scope
+   28 |         message.data = "Counter " + std::to_string(counter);
+      |                                                    ^~~~~~~
+gmake[2]: *** [CMakeFiles/test_basic_publisher.dir/build.make:76: CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_basic_publisher.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

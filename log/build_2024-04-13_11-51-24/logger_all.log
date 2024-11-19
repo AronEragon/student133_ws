@@ -1,0 +1,806 @@
+[0.086s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--event-handlers', 'status+', 'console_start_end+', '--cmake-args', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']
+[0.086s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=['status+', 'console_start_end+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7adcc1e34c40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7adcc1f457e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7adcc1f457e0>>)
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.220s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.220s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robot33-6/student133_ws'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['colcon_meta']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'colcon_meta'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['ros']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_counter' with type 'ros.ament_cmake' and name 'custom_counter'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ros'
+[0.234s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_client' with type 'ros.ament_cmake' and name 'test_client'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_msg' with type 'ros.ament_cmake' and name 'test_custom_msg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ros'
+[0.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_publisher' with type 'ros.ament_cmake' and name 'test_custom_publisher'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_srv' with type 'ros.ament_cmake' and name 'test_custom_srv'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_parameters' with type 'ros.ament_cmake' and name 'test_parameters'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_pkg' with type 'ros.ament_cmake' and name 'test_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_publisher' with type 'ros.ament_cmake' and name 'test_publisher'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_serial_communication) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_serial_communication' with type 'ros.ament_cmake' and name 'test_serial_communication'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_service' with type 'ros.ament_cmake' and name 'test_service'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_subscriber' with type 'ros.ament_cmake' and name 'test_subscriber'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_visualization' with type 'ros.ament_cmake' and name 'test_visualization'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.262s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 13 installed packages in /home/robot33-6/student133_ws/install
+[0.263s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'custom_counter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/custom_counter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/custom_counter', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/custom_counter', 'symlink_install': False, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'test_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_client', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_client', 'symlink_install': False, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_custom_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_custom_msg', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_custom_msg', 'symlink_install': False, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_custom_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_custom_publisher', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_custom_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_srv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_custom_srv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_custom_srv', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_custom_srv', 'symlink_install': False, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'test_parameters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_parameters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_parameters', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_parameters', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'test_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_pkg', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'test_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_publisher', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_serial_communication' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'test_serial_communication' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_serial_communication', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_serial_communication', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_serial_communication', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'test_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_service', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_service', 'symlink_install': False, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'test_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_subscriber', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_force_configure' from command line to 'False'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'ament_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.308s] DEBUG:colcon.colcon_core.verb:Building package 'test_visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robot33-6/student133_ws/build/test_visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robot33-6/student133_ws/install/test_visualization', 'merge_install': False, 'path': '/home/robot33-6/student133_ws/src/test_visualization', 'symlink_install': False, 'test_result_base': None}
+[0.308s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.308s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.309s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/custom_counter' with build type 'ament_cmake'
+[0.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/custom_counter'
+[0.311s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.314s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_client' with build type 'ament_cmake'
+[0.314s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_client'
+[0.314s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.314s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_custom_msg' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_custom_msg'
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.320s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_custom_publisher' with build type 'ament_cmake'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_custom_publisher'
+[0.321s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.321s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_custom_srv' with build type 'ament_cmake'
+[0.324s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_custom_srv'
+[0.324s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.324s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.327s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_parameters' with build type 'ament_cmake'
+[0.327s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_parameters'
+[0.327s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.327s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.330s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_pkg' with build type 'ament_cmake'
+[0.330s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_pkg'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.331s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.333s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_publisher' with build type 'ament_cmake'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_publisher'
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/custom_counter -- -j8 -l8
+[0.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_client -- -j8 -l8
+[0.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_custom_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_msg -- -j8 -l8
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8
+[0.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_custom_srv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_srv -- -j8 -l8
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_parameters -- -j8 -l8
+[0.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_pkg -- -j8 -l8
+[0.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8
+[0.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/custom_counter -- -j8 -l8
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8
+[0.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_pkg -- -j8 -l8
+[0.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_parameters -- -j8 -l8
+[0.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/custom_counter
+[0.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_publisher
+[0.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_counter)
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter' for CMake module files
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter' for CMake config files
+[0.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_counter', 'cmake_prefix_path')
+[0.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.dsv'
+[0.551s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/custom_counter
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.sh'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/bin'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib/pkgconfig/custom_counter.pc'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib/python3.10/site-packages'
+[0.554s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/bin'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.ps1'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.dsv'
+[0.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.sh'
+[0.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.bash'
+[0.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.zsh'
+[0.559s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/custom_counter/share/colcon-core/packages/custom_counter)
+[0.564s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_publisher)
+[0.564s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher' for CMake module files
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher' for CMake config files
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_publisher', 'cmake_prefix_path')
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.dsv'
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.sh'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/bin'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib/pkgconfig/test_publisher.pc'
+[0.568s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib/python3.10/site-packages'
+[0.569s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/bin'
+[0.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.ps1'
+[0.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.dsv'
+[0.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.sh'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.bash'
+[0.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.zsh'
+[0.573s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_publisher/share/colcon-core/packages/test_publisher)
+[0.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_publisher
+[0.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_parameters
+[0.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_pkg
+[0.591s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_parameters)
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters' for CMake module files
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters' for CMake config files
+[0.593s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_parameters', 'cmake_prefix_path')
+[0.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.ps1'
+[0.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.dsv'
+[0.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.sh'
+[0.595s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/bin'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib/pkgconfig/test_parameters.pc'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib/python3.10/site-packages'
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/bin'
+[0.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.dsv'
+[0.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.sh'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.bash'
+[0.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.zsh'
+[0.599s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_parameters/share/colcon-core/packages/test_parameters)
+[0.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_parameters
+[0.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_pkg)
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg' for CMake module files
+[0.612s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg' for CMake config files
+[0.612s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'cmake_prefix_path')
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.ps1'
+[0.613s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.dsv'
+[0.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.sh'
+[0.614s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib'
+[0.614s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/bin'
+[0.614s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib/python3.10/site-packages'
+[0.615s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/bin'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.ps1'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.dsv'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.sh'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.bash'
+[0.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.zsh'
+[0.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_pkg/share/colcon-core/packages/test_pkg)
+[0.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_pkg
+[0.630s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_counter)
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter' for CMake module files
+[0.631s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter' for CMake config files
+[0.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_counter', 'cmake_prefix_path')
+[0.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.ps1'
+[0.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.dsv'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.sh'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/bin'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib/pkgconfig/custom_counter.pc'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/lib/python3.10/site-packages'
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/custom_counter/bin'
+[0.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.ps1'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.dsv'
+[0.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.sh'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.bash'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.zsh'
+[0.638s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/custom_counter/share/colcon-core/packages/custom_counter)
+[0.640s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_serial_communication' with build type 'ament_cmake'
+[0.641s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_serial_communication'
+[0.641s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.657s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_publisher)
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher' for CMake module files
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher' for CMake config files
+[0.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_publisher', 'cmake_prefix_path')
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.ps1'
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.sh'
+[0.660s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/bin'
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib/pkgconfig/test_publisher.pc'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/lib/python3.10/site-packages'
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_publisher/bin'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.dsv'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.sh'
+[0.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.bash'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.zsh'
+[0.666s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_publisher/share/colcon-core/packages/test_publisher)
+[0.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_service' with build type 'ament_cmake'
+[0.667s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_service'
+[0.667s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.667s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_serial_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8
+[0.684s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_pkg)
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg' for CMake module files
+[0.685s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg' for CMake config files
+[0.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'cmake_prefix_path')
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.ps1'
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.dsv'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.sh'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/bin'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/lib/python3.10/site-packages'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_pkg/bin'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.sh'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.bash'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.zsh'
+[0.692s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_pkg/share/colcon-core/packages/test_pkg)
+[0.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_parameters)
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters' for CMake module files
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters' for CMake config files
+[0.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_parameters', 'cmake_prefix_path')
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.ps1'
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.dsv'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.sh'
+[0.699s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/bin'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib/pkgconfig/test_parameters.pc'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/lib/python3.10/site-packages'
+[0.700s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_parameters/bin'
+[0.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.ps1'
+[0.701s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.dsv'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.sh'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.bash'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_parameters/share/test_parameters/package.zsh'
+[0.704s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_parameters/share/colcon-core/packages/test_parameters)
+[0.708s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_subscriber' with build type 'ament_cmake'
+[0.708s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_subscriber'
+[0.708s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.709s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8
+[0.715s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robot33-6/student133_ws/src/test_visualization' with build type 'ament_cmake'
+[0.715s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robot33-6/student133_ws/src/test_visualization'
+[0.715s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.716s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_visualization -- -j8 -l8
+[0.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_serial_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8
+[0.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_serial_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_serial_communication
+[0.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_visualization -- -j8 -l8
+[0.821s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_serial_communication)
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication' for CMake module files
+[0.822s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication' for CMake config files
+[0.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_serial_communication', 'cmake_prefix_path')
+[0.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.ps1'
+[0.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.dsv'
+[0.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_serial_communication' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_serial_communication
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.sh'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/bin'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib/pkgconfig/test_serial_communication.pc'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib/python3.10/site-packages'
+[0.828s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/bin'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.ps1'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.dsv'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.sh'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.bash'
+[0.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.zsh'
+[0.831s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_serial_communication/share/colcon-core/packages/test_serial_communication)
+[0.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_subscriber
+[0.846s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_visualization
+[0.856s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_subscriber)
+[0.856s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber' for CMake module files
+[0.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_subscriber
+[0.858s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber' for CMake config files
+[0.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_subscriber', 'cmake_prefix_path')
+[0.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.ps1'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.dsv'
+[0.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.sh'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/bin'
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib/pkgconfig/test_subscriber.pc'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib/python3.10/site-packages'
+[0.861s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/bin'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.dsv'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.sh'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.bash'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.zsh'
+[0.864s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_subscriber/share/colcon-core/packages/test_subscriber)
+[0.867s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_visualization)
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization' for CMake module files
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_visualization
+[0.870s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization' for CMake config files
+[0.870s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_visualization', 'cmake_prefix_path')
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.ps1'
+[0.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.dsv'
+[0.873s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.sh'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/bin'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib/pkgconfig/test_visualization.pc'
+[0.874s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib/python3.10/site-packages'
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/bin'
+[0.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.ps1'
+[0.876s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.dsv'
+[0.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.sh'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.bash'
+[0.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.zsh'
+[0.878s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_visualization/share/colcon-core/packages/test_visualization)
+[0.880s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_serial_communication)
+[0.880s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication' for CMake module files
+[0.881s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication' for CMake config files
+[0.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_serial_communication', 'cmake_prefix_path')
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.ps1'
+[0.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.dsv'
+[0.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/hook/cmake_prefix_path.sh'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib'
+[0.883s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/bin'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib/pkgconfig/test_serial_communication.pc'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/lib/python3.10/site-packages'
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_serial_communication/bin'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.ps1'
+[0.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.dsv'
+[0.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.sh'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.bash'
+[0.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_serial_communication/share/test_serial_communication/package.zsh'
+[0.888s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_serial_communication/share/colcon-core/packages/test_serial_communication)
+[0.898s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_subscriber)
+[0.898s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber' for CMake module files
+[0.899s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber' for CMake config files
+[0.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_subscriber', 'cmake_prefix_path')
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.ps1'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.dsv'
+[0.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.sh'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib'
+[0.901s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/bin'
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib/pkgconfig/test_subscriber.pc'
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/lib/python3.10/site-packages'
+[0.902s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_subscriber/bin'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.ps1'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.dsv'
+[0.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.sh'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.bash'
+[0.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.zsh'
+[0.907s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_subscriber/share/colcon-core/packages/test_subscriber)
+[0.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_custom_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_msg -- -j8 -l8
+[0.912s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_visualization)
+[0.912s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization' for CMake module files
+[0.913s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization' for CMake config files
+[0.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_visualization', 'cmake_prefix_path')
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.ps1'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.sh'
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/bin'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib/pkgconfig/test_visualization.pc'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/lib/python3.10/site-packages'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_visualization/bin'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.ps1'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.dsv'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.sh'
+[0.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.bash'
+[0.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_visualization/share/test_visualization/package.zsh'
+[0.920s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_visualization/share/colcon-core/packages/test_visualization)
+[0.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_custom_srv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_srv -- -j8 -l8
+[0.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_custom_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_custom_msg
+[0.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robot33-6/student133_ws/build/test_custom_srv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_custom_srv
+[1.006s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_msg)
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg' for CMake module files
+[1.008s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg' for CMake config files
+[1.010s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_custom_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_custom_msg
+[1.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'cmake_prefix_path')
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.ps1'
+[1.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.dsv'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.sh'
+[1.011s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib'
+[1.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'ld_library_path_lib')
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.dsv'
+[1.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.sh'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/bin'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib/pkgconfig/test_custom_msg.pc'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib/python3.10/site-packages'
+[1.012s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/bin'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.ps1'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.dsv'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.sh'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.bash'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.zsh'
+[1.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_custom_msg/share/colcon-core/packages/test_custom_msg)
+[1.036s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_srv)
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv' for CMake module files
+[1.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_custom_srv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/test_custom_srv
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv' for CMake config files
+[1.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'cmake_prefix_path')
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.ps1'
+[1.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.dsv'
+[1.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.sh'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib'
+[1.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'ld_library_path_lib')
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.sh'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/bin'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib/pkgconfig/test_custom_srv.pc'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib/python3.10/site-packages'
+[1.041s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/bin'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.ps1'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.sh'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.bash'
+[1.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.zsh'
+[1.045s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_custom_srv/share/colcon-core/packages/test_custom_srv)
+[1.056s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_msg)
+[1.056s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg' for CMake module files
+[1.057s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg' for CMake config files
+[1.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'cmake_prefix_path')
+[1.058s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.ps1'
+[1.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.dsv'
+[1.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.sh'
+[1.059s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib'
+[1.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'ld_library_path_lib')
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.ps1'
+[1.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.dsv'
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.sh'
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/bin'
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib/pkgconfig/test_custom_msg.pc'
+[1.061s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/lib/python3.10/site-packages'
+[1.062s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_msg/bin'
+[1.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.ps1'
+[1.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.dsv'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.sh'
+[1.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.bash'
+[1.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/package.zsh'
+[1.065s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_custom_msg/share/colcon-core/packages/test_custom_msg)
+[1.086s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_srv)
+[1.086s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv' for CMake module files
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv' for CMake config files
+[1.087s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'cmake_prefix_path')
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.ps1'
+[1.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.dsv'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.sh'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib'
+[1.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'ld_library_path_lib')
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.ps1'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.dsv'
+[1.089s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.sh'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/bin'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib/pkgconfig/test_custom_srv.pc'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/lib/python3.10/site-packages'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_custom_srv/bin'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.ps1'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.dsv'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.sh'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.bash'
+[1.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/package.zsh'
+[1.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_custom_srv/share/colcon-core/packages/test_custom_srv)
+[1.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robot33-6/student133_ws/build/test_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8
+[1.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_service)
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service' for CMake module files
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service' for CMake config files
+[1.122s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_service', 'cmake_prefix_path')
+[1.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.ps1'
+[1.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robot33-6/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robot33-6/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.sh'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service/lib'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service/bin'
+[1.123s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service/lib/pkgconfig/test_service.pc'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service/lib/python3.10/site-packages'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/robot33-6/student133_ws/install/test_service/bin'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_service/share/test_service/package.ps1'
+[1.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robot33-6/student133_ws/install/test_service/share/test_service/package.dsv'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_service/share/test_service/package.sh'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_service/share/test_service/package.bash'
+[1.127s] INFO:colcon.colcon_core.shell:Creating package script '/home/robot33-6/student133_ws/install/test_service/share/test_service/package.zsh'
+[1.127s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robot33-6/student133_ws/install/test_service/share/colcon-core/packages/test_service)
+[1.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.280s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[1.280s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.284s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.284s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.284s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.284s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.BadAddress: '=' character not found or has no value following it
+[1.284s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.284s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot33-6/student133_ws/install/local_setup.ps1'
+[1.285s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robot33-6/student133_ws/install/_local_setup_util_ps1.py'
+[1.286s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot33-6/student133_ws/install/setup.ps1'
+[1.287s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot33-6/student133_ws/install/local_setup.sh'
+[1.288s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robot33-6/student133_ws/install/_local_setup_util_sh.py'
+[1.288s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot33-6/student133_ws/install/setup.sh'
+[1.289s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot33-6/student133_ws/install/local_setup.bash'
+[1.289s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot33-6/student133_ws/install/setup.bash'
+[1.290s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robot33-6/student133_ws/install/local_setup.zsh'
+[1.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robot33-6/student133_ws/install/setup.zsh'

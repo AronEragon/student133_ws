@@ -1,0 +1,8 @@
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In member function ‘void TestCounter::message_callback_sub(std_msgs::msg::Int32)’:
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:35:9: warning: operation on ‘((TestCounter*)this)->TestCounter::sub’ may be undefined [-Wsequence-point]
+   35 |     sub = sub++ ;
+      |     ~~~~^~~~~~~
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In member function ‘void TestCounter::message_callback_pub(std_msgs::msg::Int32)’:
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:43:10: warning: operation on ‘((TestCounter*)this)->TestCounter::pub’ may be undefined [-Wsequence-point]
+   43 |      pub = pub++;
+      |      ~~~~^~~~~~~

@@ -1,0 +1,10 @@
+Consolidate compiler generated dependencies of target Triangle_node
+[ 50%] Built target test_subscriber_node
+[ 75%] Building CXX object CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:3:10: fatal error: test_custom_msg/msg/triangle.hpp: No such file or directory
+    3 | #include <test_custom_msg/msg/triangle.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/Triangle_node.dir/build.make:76: CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Triangle_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

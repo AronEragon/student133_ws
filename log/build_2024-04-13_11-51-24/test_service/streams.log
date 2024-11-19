@@ -1,0 +1,10 @@
+[0.043s] Invoking command in '/home/robot33-6/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8
+[0.110s] [ 50%] Building CXX object CMakeFiles/test_service_node.dir/src/test_service_node.cpp.o
+[0.404s] /home/robot33-6/student133_ws/src/test_service/src/test_service_node.cpp:2:10: fatal error: test_custom_srv/srv/circle.hpp: No such file or directory
+[0.404s]     2 | #include "test_custom_srv/srv/circle.hpp" // локальная деректория
+[0.404s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.404s] compilation terminated.
+[0.437s] gmake[2]: *** [CMakeFiles/test_service_node.dir/build.make:76: CMakeFiles/test_service_node.dir/src/test_service_node.cpp.o] Error 1
+[0.437s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_service_node.dir/all] Error 2
+[0.438s] gmake: *** [Makefile:146: all] Error 2
+[0.438s] Invoked command in '/home/robot33-6/student133_ws/build/test_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8

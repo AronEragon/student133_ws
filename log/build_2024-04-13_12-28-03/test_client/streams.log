@@ -1,0 +1,28 @@
+[0.030s] Invoking command in '/home/robot33-6/student133_ws/build/test_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_client -- -j8 -l8
+[0.090s] Consolidate compiler generated dependencies of target client_triangle
+[0.109s] [ 50%] Built target test_client_node
+[0.113s] [ 75%] Building CXX object CMakeFiles/client_triangle.dir/src/client_triangle.cpp.o
+[2.363s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp: In member function ‘void PartClient::timer_callback()’:
+[2.363s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:35:37: error: ‘v’ was not declared in this scope
+[2.363s]    35 |         request = std:: make_shared<v::srv::TriangleSquare::Request>();
+[2.363s]       |                                     ^
+[2.363s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:35:25: error: parse error in template argument list
+[2.363s]    35 |         request = std:: make_shared<v::srv::TriangleSquare::Request>();
+[2.363s]       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.363s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:35:69: error: no matching function for call to ‘make_shared<<expression error> >()’
+[2.363s]    35 |         request = std:: make_shared<v::srv::TriangleSquare::Request>();
+[2.363s]       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+[2.363s] In file included from /usr/include/c++/11/memory:77,
+[2.363s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[2.363s]                  from /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:1:
+[2.363s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+[2.363s]   875 |     make_shared(_Args&&... __args)
+[2.363s]       |     ^~~~~~~~~~~
+[2.363s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+[2.363s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:35:69: error: template argument 1 is invalid
+[2.363s]    35 |         request = std:: make_shared<v::srv::TriangleSquare::Request>();
+[2.363s]       |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+[3.081s] gmake[2]: *** [CMakeFiles/client_triangle.dir/build.make:76: CMakeFiles/client_triangle.dir/src/client_triangle.cpp.o] Error 1
+[3.081s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client_triangle.dir/all] Error 2
+[3.081s] gmake: *** [Makefile:146: all] Error 2
+[3.082s] Invoked command in '/home/robot33-6/student133_ws/build/test_client' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_client -- -j8 -l8

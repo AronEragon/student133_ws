@@ -1,0 +1,10 @@
+[0.054s] Invoking command in '/home/robot33-6/student133_ws/build/test_serial_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8
+[0.110s] [ 50%] Building CXX object CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o
+[2.056s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In constructor ‘TestSerial::TestSerial()’:
+[2.056s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:28:84: error: lvalue required as unary ‘&’ operand
+[2.056s]    28 |       timer = this-> create_wall_timer(100ms, std::bind(&TestSerial::timer_callback(),this));
+[2.056s]       |                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+[2.870s] gmake[2]: *** [CMakeFiles/test_serial_communication_node.dir/build.make:76: CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o] Error 1
+[2.870s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_serial_communication_node.dir/all] Error 2
+[2.870s] gmake: *** [Makefile:146: all] Error 2
+[2.871s] Invoked command in '/home/robot33-6/student133_ws/build/test_serial_communication' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8

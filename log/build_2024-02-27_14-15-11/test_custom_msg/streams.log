@@ -1,0 +1,51 @@
+[0.222s] Invoking command in '/home/robot33-6/student133_ws/build/test_custom_msg': /usr/bin/cmake /home/robot33-6/student133_ws/src/test_custom_msg -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/robot33-6/student133_ws/install/test_custom_msg
+[0.237s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.463s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.464s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.464s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.464s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.464s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.465s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.577s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.577s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.633s] Error parsing '/home/robot33-6/student133_ws/src/test_custom_msg/package.xml':
+[0.633s] Traceback (most recent call last):
+[0.633s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[0.633s]     root = dom.parseString(data)
+[0.633s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString
+[0.633s]     return expatbuilder.parseString(string)
+[0.633s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[0.633s]     return builder.parseString(string)
+[0.633s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[0.633s]     parser.Parse(string, True)
+[0.633s] xml.parsers.expat.ExpatError: mismatched tag: line 23, column 2
+[0.634s] 
+[0.634s] During handling of the above exception, another exception occurred:
+[0.634s] 
+[0.634s] Traceback (most recent call last):
+[0.634s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[0.634s]     main()
+[0.634s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[0.634s]     raise e
+[0.634s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[0.634s]     package = parse_package_string(
+[0.634s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[0.634s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[0.634s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/robot33-6/student133_ws/src/test_custom_msg/package.xml':
+[0.634s] The manifest contains invalid XML:
+[0.635s] mismatched tag: line 23, column 2
+[0.642s] CMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[0.642s]   execute_process(/usr/bin/python3.10
+[0.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.642s]   /home/robot33-6/student133_ws/src/test_custom_msg/package.xml
+[0.642s]   /home/robot33-6/student133_ws/build/test_custom_msg/ament_cmake_core/package.cmake)
+[0.642s]   returned error code 1
+[0.642s] Call Stack (most recent call first):
+[0.642s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.642s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.642s]   CMakeLists.txt:25 (ament_lint_auto_find_test_dependencies)
+[0.642s] 
+[0.642s] 
+[0.642s] -- Configuring incomplete, errors occurred!
+[0.643s] See also "/home/robot33-6/student133_ws/build/test_custom_msg/CMakeFiles/CMakeOutput.log".
+[0.647s] Invoked command in '/home/robot33-6/student133_ws/build/test_custom_msg' returned '1': /usr/bin/cmake /home/robot33-6/student133_ws/src/test_custom_msg -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/robot33-6/student133_ws/install/test_custom_msg

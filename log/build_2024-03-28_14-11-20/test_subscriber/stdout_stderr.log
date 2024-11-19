@@ -1,0 +1,12 @@
+Consolidate compiler generated dependencies of target test_subscriber_node
+[ 50%] Building CXX object CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp: In member function ‘void TestSubscriber::message_callback(const Int32&) const’:
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:45:17: error: increment of member ‘TestSubscriber::counter’ in read-only object
+   45 |     msg.data = (counter++);
+      |                 ^~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:45:14: error: assignment of member ‘std_msgs::msg::Int32_<std::allocator<void> >::data’ in read-only object
+   45 |     msg.data = (counter++);
+      |     ~~~~~~~~~^~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/test_subscriber_node.dir/build.make:76: CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_subscriber_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

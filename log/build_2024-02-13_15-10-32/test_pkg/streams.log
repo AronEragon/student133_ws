@@ -1,0 +1,80 @@
+[0.054s] Invoking command in '/home/robot33-5/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-5/student133_ws/build/test_pkg -- -j8 -l8
+[0.088s] [ 50%] Building CXX object CMakeFiles/test_pkg_node.dir/src/test_pkg_node.cpp.o
+[0.277s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:25:37: error: macro "RCLCPP_INFO_STREAM" requires 2 arguments, but only 1 given
+[0.277s]    25 |                        "Hello world");
+[0.277s]       |                                     ^
+[0.277s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+[0.277s]                  from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+[0.277s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[0.278s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[0.278s]                  from /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:2:
+[0.278s] /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:722: note: macro "RCLCPP_INFO_STREAM" defined here
+[0.278s]   722 | #define RCLCPP_INFO_STREAM(logger, stream_arg) \
+[0.278s]       | 
+[1.880s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:20:21: error: cannot declare field ‘TestNode::timer’ to be of abstract type ‘rclcpp::TimerBase’
+[1.880s]    20 |   rclcpp::TimerBase timer;
+[1.880s]       |                     ^~~~~
+[1.880s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30,
+[1.880s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[1.881s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[1.881s]                  from /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:2:
+[1.881s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:46:7: note:   because the following virtual functions are pure within ‘rclcpp::TimerBase’:
+[1.881s]    46 | class TimerBase
+[1.881s]       |       ^~~~~~~~~
+[1.881s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:103:3: note:     ‘virtual bool rclcpp::TimerBase::call()’
+[1.881s]   103 |   call() = 0;
+[1.881s]       |   ^~~~
+[1.881s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:108:3: note:     ‘virtual void rclcpp::TimerBase::execute_callback()’
+[1.881s]   108 |   execute_callback() = 0;
+[1.881s]       |   ^~~~~~~~~~~~~~~~
+[1.881s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:126:16: note:     ‘virtual bool rclcpp::TimerBase::is_steady()’
+[1.881s]   126 |   virtual bool is_steady() = 0;
+[1.881s]       |                ^~~~~~~~~
+[1.882s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp: In constructor ‘TestNode::TestNode()’:
+[1.882s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:11:19: error: no matching function for call to ‘rclcpp::TimerBase::TimerBase()’
+[1.882s]    11 |   Node("test_node") //Имя узла
+[1.882s]       |                   ^
+[1.882s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[1.882s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[1.882s]                  from /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:2:
+[1.882s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:58:12: note: candidate: ‘rclcpp::TimerBase::TimerBase(rclcpp::Clock::SharedPtr, std::chrono::nanoseconds, rclcpp::Context::SharedPtr)’
+[1.882s]    58 |   explicit TimerBase(
+[1.882s]       |            ^~~~~~~~~
+[1.892s] /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:58:12: note:   candidate expects 3 arguments, 0 provided
+[1.895s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:14:33: error: ‘ls’ was not declared in this scope
+[1.895s]    14 |         this->create_wall_timer(ls,
+[1.895s]       |                                 ^~
+[1.905s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp: In member function ‘void TestNode::timer_callback()’:
+[1.905s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:24:5: error: ‘RCLCPP_INFO_STREAM’ was not declared in this scope
+[1.905s]    24 |     RCLCPP_INFO_STREAM(this->get_logger()
+[1.905s]       |     ^~~~~~~~~~~~~~~~~~
+[1.905s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp: In function ‘int main(int, char**)’:
+[1.905s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:29:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+[1.905s]    29 | int main(int argc, char **argv)
+[1.905s]       |          ~~~~^~~~
+[1.905s] /home/robot33-5/student133_ws/src/test_pkg/src/test_pkg_node.cpp:29:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+[1.905s]    29 | int main(int argc, char **argv)
+[1.905s]       |                    ~~~~~~~^~~~
+[2.262s] gmake[2]: *** [CMakeFiles/test_pkg_node.dir/build.make:76: CMakeFiles/test_pkg_node.dir/src/test_pkg_node.cpp.o] Error 1
+[2.262s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_pkg_node.dir/all] Error 2
+[2.263s] gmake: *** [Makefile:146: all] Error 2
+[2.264s] Invoked command in '/home/robot33-5/student133_ws/build/test_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-5/student133_ws/build/test_pkg -- -j8 -l8

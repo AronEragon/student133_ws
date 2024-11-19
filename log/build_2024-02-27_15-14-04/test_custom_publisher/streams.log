@@ -1,0 +1,30 @@
+[0.213s] Invoking command in '/home/robot33-6/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8
+[0.250s] Consolidate compiler generated dependencies of target test_custom_publisher_node
+[0.266s] [ 50%] Building CXX object CMakeFiles/test_custom_publisher_node.dir/src/test_custom_publisher.cpp.o
+[2.189s] /home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp: In constructor ‘CustomPublisher::CustomPublisher()’:
+[2.189s] /home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:13:32: error: no matching function for call to ‘CustomPublisher::create_wall_timer(CustomPublisher*, std::_Bind_helper<false, void (CustomPublisher::*)(), CustomPublisher*>::type)’
+[2.189s]    13 |         this->create_wall_timer(this,
+[2.189s]       |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[2.189s]    14 |                                 std::bind(&CustomPublisher::
+[2.189s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.190s]    15 |                                           timer_callback, this));
+[2.190s]       |                                           ~~~~~~~~~~~~~~~~~~~~~~
+[2.190s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[2.190s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[2.190s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.190s]                  from /home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:1:
+[2.190s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3: note: candidate: ‘template<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)’
+[2.190s]   238 |   create_wall_timer(
+[2.190s]       |   ^~~~~~~~~~~~~~~~~
+[2.190s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3: note:   template argument deduction/substitution failed:
+[2.190s] /home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:13:32: note:   mismatched types ‘std::chrono::duration<_Rep1, _Period1>’ and ‘CustomPublisher*’
+[2.190s]    13 |         this->create_wall_timer(this,
+[2.190s]       |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[2.190s]    14 |                                 std::bind(&CustomPublisher::
+[2.190s]       |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.190s]    15 |                                           timer_callback, this));
+[2.190s]       |                                           ~~~~~~~~~~~~~~~~~~~~~~
+[2.997s] gmake[2]: *** [CMakeFiles/test_custom_publisher_node.dir/build.make:76: CMakeFiles/test_custom_publisher_node.dir/src/test_custom_publisher.cpp.o] Error 1
+[2.997s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_custom_publisher_node.dir/all] Error 2
+[2.997s] gmake: *** [Makefile:146: all] Error 2
+[2.998s] Invoked command in '/home/robot33-6/student133_ws/build/test_custom_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8

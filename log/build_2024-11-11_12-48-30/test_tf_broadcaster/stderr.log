@@ -1,0 +1,25 @@
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In constructor ‘TestTfListener::TestTfListener()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:49: error: ‘TransformLstener’ is not a member of ‘tf2_ros’; did you mean ‘TransformListener’?
+   21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+      |                                                 ^~~~~~~~~~~~~~~~
+      |                                                 TransformListener
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:66: error: no matching function for call to ‘make_shared<<expression error> >(tf2_ros::Buffer&)’
+   21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:77,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  875 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:66: error: template argument 1 is invalid
+   21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘void TestTfListener::timer_callback()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:61:20: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+   61 |             return 0;
+      |                    ^
+gmake[2]: *** [CMakeFiles/test_tf_listener_node.dir/build.make:76: CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_tf_listener_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

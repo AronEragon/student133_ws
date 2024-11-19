@@ -1,0 +1,66 @@
+[0.081s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.272s] Consolidate compiler generated dependencies of target test_tf_listener_node
+[0.306s] [ 50%] Built target test_tf_broadcaster_node
+[0.310s] [ 75%] Building CXX object CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o
+[5.337s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:30: error: ‘Buffer’ is not a member of ‘tf2_ros’
+[5.337s]    29 |     std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+[5.338s]       |                              ^~~~~~
+[5.338s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:36: error: template argument 1 is invalid
+[5.338s]    29 |     std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+[5.338s]       |                                    ^
+[5.338s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:36: error: template argument 2 is invalid
+[5.343s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In constructor ‘TestTfListener::TestTfListener()’:
+[5.343s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:47: error: ‘Buffer’ is not a member of ‘tf2_ros’
+[5.343s]    19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+[5.343s]       |                                               ^~~~~~
+[5.343s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: no matching function for call to ‘make_unique<<expression error> >(rclcpp::Clock::SharedPtr)’
+[5.343s]    19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+[5.343s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+[5.344s] In file included from /usr/include/c++/11/memory:76,
+[5.344s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[5.344s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+[5.344s] /usr/include/c++/11/bits/unique_ptr.h:961:5: note: candidate: ‘template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)’
+[5.344s]   961 |     make_unique(_Args&&... __args)
+[5.344s]       |     ^~~~~~~~~~~
+[5.344s] /usr/include/c++/11/bits/unique_ptr.h:961:5: note:   template argument deduction/substitution failed:
+[5.345s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+[5.345s]    19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+[5.345s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+[5.345s] In file included from /usr/include/c++/11/memory:76,
+[5.345s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[5.345s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+[5.345s] /usr/include/c++/11/bits/unique_ptr.h:967:5: note: candidate: ‘template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)’
+[5.346s]   967 |     make_unique(size_t __num)
+[5.346s]       |     ^~~~~~~~~~~
+[5.346s] /usr/include/c++/11/bits/unique_ptr.h:967:5: note:   template argument deduction/substitution failed:
+[5.346s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+[5.346s]    19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+[5.346s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+[5.346s] In file included from /usr/include/c++/11/memory:76,
+[5.346s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[5.347s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+[5.347s] /usr/include/c++/11/bits/unique_ptr.h:973:5: note: candidate: ‘template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)’ (deleted)
+[5.347s]   973 |     make_unique(_Args&&...) = delete;
+[5.347s]       |     ^~~~~~~~~~~
+[5.347s] /usr/include/c++/11/bits/unique_ptr.h:973:5: note:   template argument deduction/substitution failed:
+[5.347s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+[5.347s]    19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+[5.348s]       |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+[5.348s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:20:49: error: ‘TransformLstener’ is not a member of ‘tf2_ros’; did you mean ‘TransformListener’?
+[5.348s]    20 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+[5.348s]       |                                                 ^~~~~~~~~~~~~~~~
+[5.348s]       |                                                 TransformListener
+[5.348s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:20:67: error: invalid type argument of unary ‘*’ (have ‘int’)
+[5.348s]    20 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+[5.349s]       |                                                                   ^~~~~~~~~~
+[5.359s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘void TestTfListener::timer_callback()’:
+[5.359s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:35:26: error: base operand of ‘->’ is not a pointer
+[5.359s]    35 |             t = tf_buffer->lookupTransform(source_frame,
+[5.359s]       |                          ^~
+[5.362s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:60:20: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+[5.362s]    60 |             return 0;
+[5.362s]       |                    ^
+[6.553s] gmake[2]: *** [CMakeFiles/test_tf_listener_node.dir/build.make:76: CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o] Ошибка 1
+[6.553s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_tf_listener_node.dir/all] Ошибка 2
+[6.554s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.561s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

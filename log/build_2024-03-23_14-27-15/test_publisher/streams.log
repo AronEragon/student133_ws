@@ -1,0 +1,26 @@
+[0.122s] Invoking command in '/home/robot33-6/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8
+[0.205s] Consolidate compiler generated dependencies of target test_publisher_node
+[0.213s] [ 50%] Building CXX object CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o
+[2.294s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: In constructor ‘TestPublisher::TestPublisher()’:
+[2.294s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:15:29: error: no matching function for call to ‘TestPublisher::create_publisher<std_msgs::msg::String>(int)’
+[2.294s]    14 |     publisher = this->create_publisher<std_msgs::msg::String>
+[2.294s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.295s]    15 |                             (8);
+[2.295s]       |                             ^~~
+[2.295s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[2.295s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[2.295s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.295s]                  from /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:1:
+[2.295s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[2.295s]   195 |   create_publisher(
+[2.295s]       |   ^~~~~~~~~~~~~~~~
+[2.295s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[2.310s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:15:29: note:   candidate expects 3 arguments, 1 provided
+[2.310s]    14 |     publisher = this->create_publisher<std_msgs::msg::String>
+[2.310s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.310s]    15 |                             (8);
+[2.310s]       |                             ^~~
+[2.974s] gmake[2]: *** [CMakeFiles/test_publisher_node.dir/build.make:76: CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o] Error 1
+[2.974s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_publisher_node.dir/all] Error 2
+[2.974s] gmake: *** [Makefile:146: all] Error 2
+[2.976s] Invoked command in '/home/robot33-6/student133_ws/build/test_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8

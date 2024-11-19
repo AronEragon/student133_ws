@@ -1,0 +1,36 @@
+-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found test_custom_msg: 0.0.0 (/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/robot33-6/student133_ws/build/test_custom_publisher
+[ 50%] Building CXX object CMakeFiles/test_custom_publisher_node.dir/src/test_custom_publisher.cpp.o
+/home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp: In constructor ‘CustomPublisher::CustomPublisher()’:
+/home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:13:33: error: ‘is’ was not declared in this scope
+   13 |         this->create_wall_timer(is,
+      |                                 ^~
+/home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:15:64: error: expected ‘)’ before ‘;’ token
+   15 |                                           timer_callback, this);
+      |                                                                ^
+/home/robot33-6/student133_ws/src/test_custom_publisher/src/test_custom_publisher.cpp:13:32: note: to match this ‘(’
+   13 |         this->create_wall_timer(is,
+      |                                ^
+gmake[2]: *** [CMakeFiles/test_custom_publisher_node.dir/build.make:76: CMakeFiles/test_custom_publisher_node.dir/src/test_custom_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_custom_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

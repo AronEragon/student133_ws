@@ -1,0 +1,15 @@
+[0.047s] Invoking command in '/home/eragon/student133_ws/build/test_basic_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_basic_publisher -- -j8 -l8
+[0.161s] Consolidate compiler generated dependencies of target test_basic_publisher
+[0.205s] [ 50%] Building CXX object CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o
+[3.363s] /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In constructor ‘TestBasicPublisher::TestBasicPublisher()’:
+[3.363s] /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:13:9: error: class ‘TestBasicPublisher’ does not have any field named ‘counter’
+[3.363s]    13 |         counter(0)
+[3.364s]       |         ^~~~~~~
+[3.382s] /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In member function ‘void TestBasicPublisher::timer_callback()’:
+[3.382s] /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:52: error: ‘counter’ was not declared in this scope
+[3.382s]    28 |         message.data = "Counter " + std::to_string(counter);
+[3.382s]       |                                                    ^~~~~~~
+[4.642s] gmake[2]: *** [CMakeFiles/test_basic_publisher.dir/build.make:76: CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o] Ошибка 1
+[4.642s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_basic_publisher.dir/all] Ошибка 2
+[4.643s] gmake: *** [Makefile:146: all] Ошибка 2
+[4.648s] Invoked command in '/home/eragon/student133_ws/build/test_basic_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_basic_publisher -- -j8 -l8

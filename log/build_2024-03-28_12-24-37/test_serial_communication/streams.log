@@ -1,0 +1,47 @@
+[0.120s] Invoking command in '/home/robot33-6/student133_ws/build/test_serial_communication': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8
+[0.150s] Consolidate compiler generated dependencies of target test_serial_communication_node
+[0.179s] [ 50%] Building CXX object CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o
+[2.301s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In constructor ‘TestSerial::TestSerial()’:
+[2.301s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:16:30: error: ‘std_msg’ was not declared in this scope; did you mean ‘std_msgs’?
+[2.301s]    16 |       this->create_publisher<std_msg::msg::Int32>
+[2.301s]       |                              ^~~~~~~
+[2.301s]       |                              std_msgs
+[2.302s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:16:13: error: parse error in template argument list
+[2.302s]    16 |       this->create_publisher<std_msg::msg::Int32>
+[2.302s]       |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.302s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:17:7: error: no matching function for call to ‘TestSerial::create_publisher<<expression error> >(const char [4], int)’
+[2.302s]    16 |       this->create_publisher<std_msg::msg::Int32>
+[2.302s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.302s]    17 |       ("pot",10);
+[2.302s]       |       ^~~~~~~~~~
+[2.302s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[2.302s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[2.302s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.302s]                  from /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:1:
+[2.302s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[2.302s]   195 |   create_publisher(
+[2.302s]       |   ^~~~~~~~~~~~~~~~
+[2.302s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[2.302s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:17:7: error: template argument 1 is invalid
+[2.302s]    16 |       this->create_publisher<std_msg::msg::Int32>
+[2.302s]       |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.302s]    17 |       ("pot",10);
+[2.302s]       |       ^~~~~~~~~~
+[2.302s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:22:17: error: ‘class LibSerial::SerialStream’ has no member named ‘SetBaundRate’; did you mean ‘SetBaudRate’?
+[2.302s]    22 |   serial_stream.SetBaundRate(
+[2.303s]       |                 ^~~~~~~~~~~~
+[2.303s]       |                 SetBaudRate
+[2.303s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:23:9: error: ‘BaundRate’ has not been declared
+[2.303s]    23 |         BaundRate::BAUND_115200);
+[2.303s]       |         ^~~~~~~~~
+[2.310s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In member function ‘void TestSerial::timer_callback()’:
+[2.310s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:74: error: expected ‘)’ before ‘;’ token
+[2.310s]    51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+[2.310s]       |                                                                          ^
+[2.310s] /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:19: note: to match this ‘(’
+[2.310s]    51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+[2.310s]       |                   ^
+[2.963s] gmake[2]: *** [CMakeFiles/test_serial_communication_node.dir/build.make:76: CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o] Error 1
+[2.963s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_serial_communication_node.dir/all] Error 2
+[2.963s] gmake: *** [Makefile:146: all] Error 2
+[2.965s] Invoked command in '/home/robot33-6/student133_ws/build/test_serial_communication' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_serial_communication -- -j8 -l8

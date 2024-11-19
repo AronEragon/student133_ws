@@ -1,0 +1,12 @@
+[0.028s] Invoking command in '/home/robot33-6/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8
+[0.096s] Consolidate compiler generated dependencies of target test_custom_publisher_node
+[0.098s] Consolidate compiler generated dependencies of target Triangle_node
+[0.128s] [ 25%] Linking CXX executable test_custom_publisher_node
+[0.128s] [ 75%] Built target Triangle_node
+[0.879s] /usr/bin/ld: CMakeFiles/test_custom_publisher_node.dir/src/test_custom_publisher.cpp.o: in function `std::enable_if<rosidl_generator_traits::is_message<test_custom_msg::msg::Circle_<std::allocator<void> > >::value, rosidl_message_type_support_t const&>::type rclcpp::get_message_type_support_handle<test_custom_msg::msg::Circle_<std::allocator<void> > >()':
+[0.879s] /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:50: undefined reference to `rosidl_message_type_support_t const* rosidl_typesupport_cpp::get_message_type_support_handle<test_custom_msg::msg::Circle_<std::allocator<void> > >()'
+[0.898s] collect2: error: ld returned 1 exit status
+[0.900s] gmake[2]: *** [CMakeFiles/test_custom_publisher_node.dir/build.make:175: test_custom_publisher_node] Error 1
+[0.900s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_custom_publisher_node.dir/all] Error 2
+[0.900s] gmake: *** [Makefile:146: all] Error 2
+[0.901s] Invoked command in '/home/robot33-6/student133_ws/build/test_custom_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8

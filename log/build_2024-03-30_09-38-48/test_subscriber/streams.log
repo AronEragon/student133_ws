@@ -1,0 +1,11 @@
+[0.028s] Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.080s] Consolidate compiler generated dependencies of target test_subscriber_node
+[0.095s] [ 50%] Building CXX object CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o
+[2.037s] /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp: In constructor ‘TestSubscriber::TestSubscriber()’:
+[2.037s] /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:42:33: error: unable to find numeric literal operator ‘operator""s’
+[2.037s]    42 |         this->create_wall_timer(1s, std::bind(&TestSubscriber::timer_callback,
+[2.037s]       |                                 ^~
+[3.811s] gmake[2]: *** [CMakeFiles/test_subscriber_node.dir/build.make:76: CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o] Error 1
+[3.811s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_subscriber_node.dir/all] Error 2
+[3.811s] gmake: *** [Makefile:146: all] Error 2
+[3.813s] Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8

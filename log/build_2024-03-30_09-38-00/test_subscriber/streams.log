@@ -1,0 +1,14 @@
+[0.008s] Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.094s] Consolidate compiler generated dependencies of target test_subscriber_node
+[0.104s] [ 50%] Building CXX object CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o
+[2.650s] /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp: In constructor ‘TestSubscriber::TestSubscriber()’:
+[2.650s] /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:42:33: error: unable to find numeric literal operator ‘operator""s’
+[2.650s]    42 |         this->create_wall_timer(1s, std::bind(&TestPublisher::timer_callback,
+[2.651s]       |                                 ^~
+[2.651s] /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:42:48: error: ‘TestPublisher’ has not been declared
+[2.651s]    42 |         this->create_wall_timer(1s, std::bind(&TestPublisher::timer_callback,
+[2.651s]       |                                                ^~~~~~~~~~~~~
+[4.582s] gmake[2]: *** [CMakeFiles/test_subscriber_node.dir/build.make:76: CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o] Error 1
+[4.582s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_subscriber_node.dir/all] Error 2
+[4.582s] gmake: *** [Makefile:146: all] Error 2
+[4.584s] Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8

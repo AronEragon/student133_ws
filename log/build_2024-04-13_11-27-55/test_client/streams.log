@@ -1,0 +1,11 @@
+[0.030s] Invoking command in '/home/robot33-6/student133_ws/build/test_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_client -- -j8 -l8
+[0.098s] [ 25%] Building CXX object CMakeFiles/client_triangle.dir/src/client_triangle.cpp.o
+[0.104s] [ 75%] Built target test_client_node
+[0.408s] /home/robot33-6/student133_ws/src/test_client/src/client_triangle.cpp:2:10: fatal error: test_custom_srv/srv/triangle_square.hpp: No such file or directory
+[0.408s]     2 | #include "test_custom_srv/srv/triangle_square.hpp"
+[0.409s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.409s] compilation terminated.
+[0.413s] gmake[2]: *** [CMakeFiles/client_triangle.dir/build.make:76: CMakeFiles/client_triangle.dir/src/client_triangle.cpp.o] Error 1
+[0.413s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/client_triangle.dir/all] Error 2
+[0.414s] gmake: *** [Makefile:146: all] Error 2
+[0.416s] Invoked command in '/home/robot33-6/student133_ws/build/test_client' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_client -- -j8 -l8

@@ -1,0 +1,57 @@
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:95:2: error: expected ‘}’ at end of input
+   95 | }
+      |  ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:11:39: note: to match this ‘{’
+   11 | class TestSerial: public rclcpp::Node {
+      |                                       ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In constructor ‘TestSerial::TestSerial()’:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:16:30: error: ‘std_msg’ was not declared in this scope; did you mean ‘std_msgs’?
+   16 |       this->create_publisher<std_msg::msg::Int32>
+      |                              ^~~~~~~
+      |                              std_msgs
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:16:13: error: parse error in template argument list
+   16 |       this->create_publisher<std_msg::msg::Int32>
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:17:7: error: no matching function for call to ‘TestSerial::create_publisher<<expression error> >(const char [4], int)’
+   16 |       this->create_publisher<std_msg::msg::Int32>
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   17 |       ("pot",10);
+      |       ^~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:1:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+  195 |   create_publisher(
+      |   ^~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:17:7: error: template argument 1 is invalid
+   16 |       this->create_publisher<std_msg::msg::Int32>
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   17 |       ("pot",10);
+      |       ^~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:22:17: error: ‘class LibSerial::SerialStream’ has no member named ‘SetBaundRate’; did you mean ‘SetBaudRate’?
+   22 |   serial_stream.SetBaundRate(
+      |                 ^~~~~~~~~~~~
+      |                 SetBaudRate
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:23:9: error: ‘BaundRate’ has not been declared
+   23 |         BaundRate::BAUND_115200);
+      |         ^~~~~~~~~
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In member function ‘void TestSerial::timer_callback()’:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:74: error: expected ‘)’ before ‘;’ token
+   51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+      |                                                                          ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:19: note: to match this ‘(’
+   51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+      |                   ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In member function ‘int TestSerial::main(int, char**)’:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:95:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   95 | }
+      | ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: At global scope:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:95:2: error: expected unqualified-id at end of input
+   95 | }
+      |  ^
+gmake[2]: *** [CMakeFiles/test_serial_communication_node.dir/build.make:76: CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_serial_communication_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

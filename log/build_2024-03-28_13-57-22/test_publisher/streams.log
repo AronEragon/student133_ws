@@ -1,0 +1,21 @@
+[0.124s] Invoking command in '/home/robot33-6/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8
+[0.226s] Consolidate compiler generated dependencies of target test_publisher_node
+[0.226s] [ 50%] Building CXX object CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o
+[2.268s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:62:2: error: expected ‘}’ at end of input
+[2.268s]    62 | }
+[2.268s]       |  ^
+[2.269s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:6:43: note: to match this ‘{’
+[2.269s]     6 | class TestPublisher : public rclcpp::Node {
+[2.269s]       |                                           ^
+[2.280s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: In member function ‘int TestPublisher::main(int, char**)’:
+[2.280s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:62:1: warning: no return statement in function returning non-void [-Wreturn-type]
+[2.280s]    62 | }
+[2.280s]       | ^
+[2.280s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: At global scope:
+[2.280s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:62:2: error: expected unqualified-id at end of input
+[2.280s]    62 | }
+[2.281s]       |  ^
+[3.007s] gmake[2]: *** [CMakeFiles/test_publisher_node.dir/build.make:76: CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o] Error 1
+[3.007s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_publisher_node.dir/all] Error 2
+[3.007s] gmake: *** [Makefile:146: all] Error 2
+[3.008s] Invoked command in '/home/robot33-6/student133_ws/build/test_publisher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8

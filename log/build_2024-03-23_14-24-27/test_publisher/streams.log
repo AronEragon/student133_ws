@@ -1,0 +1,27 @@
+[0.251s] Invoking command in '/home/robot33-6/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_publisher -- -j8 -l8
+[0.787s] [ 50%] Building CXX object CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o
+[3.187s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: In constructor ‘TestPublisher::TestPublisher()’:
+[3.187s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:14:55: error: ‘int32’ is not a member of ‘std_msgs::msg’
+[3.188s]    14 |     publisher = this->create_publisher<std_msgs::msg::int32>
+[3.188s]       |                                                       ^~~~~
+[3.188s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:15:29: error: no matching function for call to ‘TestPublisher::create_publisher<<expression error> >(int)’
+[3.188s]    14 |     publisher = this->create_publisher<std_msgs::msg::int32>
+[3.188s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.188s]    15 |                             (8);
+[3.188s]       |                             ^~~
+[3.195s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[3.195s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[3.195s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.195s]                  from /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:1:
+[3.196s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note: candidate: ‘template<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)’
+[3.196s]   195 |   create_publisher(
+[3.196s]       |   ^~~~~~~~~~~~~~~~
+[3.196s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3: note:   template argument deduction/substitution failed:
+[3.196s] /home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:15:29: error: template argument 1 is invalid
+[3.196s]    14 |     publisher = this->create_publisher<std_msgs::msg::int32>
+[3.196s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.196s]    15 |                             (8);
+[3.196s]       |                             ^~~
+[3.862s] gmake[2]: *** [CMakeFiles/test_publisher_node.dir/build.make:76: CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o] Error 1
+[3.862s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_publisher_node.dir/all] Error 2
+[3.862s] gmake: *** [Makefile:146: all] Error 2

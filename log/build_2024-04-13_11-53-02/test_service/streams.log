@@ -1,0 +1,32 @@
+[0.015s] Invoking command in '/home/robot33-6/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8
+[0.055s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.245s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.285s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.290s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.294s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.315s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.342s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.424s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.426s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.534s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Found test_custom_srv: 0.0.0 (/home/robot33-6/student133_ws/install/test_custom_srv/share/test_custom_srv/cmake)
+[0.677s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.734s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.734s] -- Configured cppcheck include dirs: 
+[0.734s] -- Configured cppcheck exclude dirs and/or files: 
+[0.734s] -- Added test 'lint_cmake' to check CMake code style
+[0.735s] -- Added test 'uncrustify' to check C / C++ code style
+[0.735s] -- Configured uncrustify additional arguments: 
+[0.735s] -- Added test 'xmllint' to check XML markup files
+[0.735s] -- Configuring done
+[0.747s] -- Generating done
+[0.748s] -- Build files have been written to: /home/robot33-6/student133_ws/build/test_service
+[0.769s] Consolidate compiler generated dependencies of target test_service_node
+[0.779s] [ 50%] Building CXX object CMakeFiles/test_service_node.dir/src/test_service_node.cpp.o
+[0.931s] /home/robot33-6/student133_ws/src/test_service/src/test_service_node.cpp:2:10: fatal error: test_custom_srv/srv/circle.hpp: No such file or directory
+[0.931s]     2 | #include "test_custom_srv/srv/circle.hpp" // локальная деректория
+[0.931s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.931s] compilation terminated.
+[0.933s] gmake[2]: *** [CMakeFiles/test_service_node.dir/build.make:76: CMakeFiles/test_service_node.dir/src/test_service_node.cpp.o] Error 1
+[0.933s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_service_node.dir/all] Error 2
+[0.933s] gmake: *** [Makefile:146: all] Error 2

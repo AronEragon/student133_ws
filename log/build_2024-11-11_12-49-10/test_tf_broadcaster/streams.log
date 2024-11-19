@@ -1,0 +1,12 @@
+[0.090s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.268s] [ 50%] Built target test_tf_broadcaster_node
+[0.274s] Consolidate compiler generated dependencies of target test_tf_listener_node
+[0.310s] [ 75%] Building CXX object CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o
+[5.630s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘void TestTfListener::timer_callback()’:
+[5.630s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:61:20: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+[5.630s]    61 |             return 0;
+[5.631s]       |                    ^
+[6.259s] gmake[2]: *** [CMakeFiles/test_tf_listener_node.dir/build.make:76: CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o] Ошибка 1
+[6.260s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_tf_listener_node.dir/all] Ошибка 2
+[6.261s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.266s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

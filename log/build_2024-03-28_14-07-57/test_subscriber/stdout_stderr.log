@@ -1,0 +1,23 @@
+Consolidate compiler generated dependencies of target test_subscriber_node
+[ 50%] Building CXX object CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:1:
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp: In member function ‘void TestSubscriber::message_callback(const Int32&) const’:
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:45:43: error: increment of member ‘TestSubscriber::counter’ in read-only object
+   45 |     RCLCPP_INFO_STREAM(this->get_logger(),counter++
+      |                                           ^~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/test_subscriber_node.cpp:43:53: warning: unused parameter ‘msg’ [-Wunused-parameter]
+   43 |   void message_callback(const std_msgs::msg::Int32 &msg) const
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+gmake[2]: *** [CMakeFiles/test_subscriber_node.dir/build.make:76: CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_subscriber_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

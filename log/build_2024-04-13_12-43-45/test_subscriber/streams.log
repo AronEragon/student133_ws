@@ -1,0 +1,82 @@
+[0.024s] Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.080s] [ 25%] Building CXX object CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o
+[0.087s] [ 75%] Built target test_subscriber_node
+[2.012s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:30: error: ‘test_custom_msg’ was not declared in this scope
+[2.012s]    20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+[2.012s]       |                              ^~~~~~~~~~~~~~~
+[2.012s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 1 is invalid
+[2.012s]    20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+[2.012s]       |                                                            ^
+[2.012s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 3 is invalid
+[2.012s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 4 is invalid
+[2.012s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 5 is invalid
+[2.013s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:65: error: expected ‘;’ at end of member declaration
+[2.013s]    20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+[2.013s]       |                                                                 ^~~~~~~~~
+[2.013s]       |                                                                          ;
+[2.013s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:21:51: error: ‘subscriber’ does not name a type; did you mean ‘PartSubscriber’?
+[2.013s]    21 |                                                   subscriber;
+[2.013s]       |                                                   ^~~~~~~~~~
+[2.013s]       |                                                   PartSubscriber
+[2.015s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:29: error: ‘test_custom_msg’ does not name a type
+[2.015s]    24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+[2.015s]       |                             ^~~~~~~~~~~~~~~
+[2.015s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:49: error: expected unqualified-id before ‘::’ token
+[2.015s]    24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+[2.015s]       |                                                 ^~
+[2.015s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:49: error: expected ‘)’ before ‘::’ token
+[2.015s]    24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+[2.015s]       |                      ~                          ^~
+[2.015s]       |                                                 )
+[2.015s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:46: error: expected ‘;’ at end of member declaration
+[2.015s]    24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+[2.016s]       |                                              ^~~
+[2.016s]       |                                                 ;
+[2.017s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:51: error: ‘Triangle’ in namespace ‘::’ does not name a type
+[2.017s]    24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+[2.017s]       |                                                   ^~~~~~~~
+[2.021s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp: In constructor ‘PartSubscriber::PartSubscriber()’:
+[2.021s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:10:5: error: ‘subscriber’ was not declared in this scope; did you mean ‘PartSubscriber’?
+[2.021s]    10 |     subscriber =
+[2.022s]       |     ^~~~~~~~~~
+[2.022s]       |     PartSubscriber
+[2.027s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:11:41: error: ‘test_custom_msg’ was not declared in this scope
+[2.027s]    11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+[2.027s]       |                                         ^~~~~~~~~~~~~~~
+[2.027s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:11:21: error: parse error in template argument list
+[2.028s]    11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+[2.028s]       |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.031s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:12:13: error: no matching function for call to ‘PartSubscriber::create_subscription<<expression error> >(const char [10], int, std::_Bind_helper<false, void (PartSubscriber::*)(...), PartSubscriber*, const std::_Placeholder<1>&>::type)’
+[2.031s]    11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+[2.031s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.031s]    12 |             ("/triangle", 8,
+[2.032s]       |             ^~~~~~~~~~~~~~~~
+[2.032s]    13 |              std :: bind (&PartSubscriber::message_callback,
+[2.032s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.032s]    14 |                           this,
+[2.032s]       |                           ~~~~~
+[2.032s]    15 |                           std:: placeholders::_1));
+[2.032s]       |                           ~~~~~~~~~~~~~~~~~~~~~~~~
+[2.032s] In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+[2.032s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+[2.032s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[2.032s]                  from /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:1:
+[2.032s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
+[2.032s]   219 |   create_subscription(
+[2.032s]       |   ^~~~~~~~~~~~~~~~~~~
+[2.032s] /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3: note:   template argument deduction/substitution failed:
+[2.032s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:12:13: error: template argument 1 is invalid
+[2.032s]    11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+[2.032s]       |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.032s]    12 |             ("/triangle", 8,
+[2.032s]       |             ^~~~~~~~~~~~~~~~
+[2.032s]    13 |              std :: bind (&PartSubscriber::message_callback,
+[2.032s]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2.032s]    14 |                           this,
+[2.033s]       |                           ~~~~~
+[2.033s]    15 |                           std:: placeholders::_1));
+[2.033s]       |                           ~~~~~~~~~~~~~~~~~~~~~~~~
+[2.595s] gmake[2]: *** [CMakeFiles/Triangle_node.dir/build.make:76: CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o] Error 1
+[2.595s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Triangle_node.dir/all] Error 2
+[2.595s] gmake: *** [Makefile:146: all] Error 2
+[2.597s] Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8

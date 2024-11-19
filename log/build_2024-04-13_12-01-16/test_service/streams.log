@@ -1,0 +1,10 @@
+[0.028s] Invoking command in '/home/robot33-6/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8
+[0.111s] [ 25%] Linking CXX executable test_service_node
+[0.117s] [ 75%] Built target service_triangle
+[0.444s] /usr/bin/ld: CMakeFiles/test_service_node.dir/src/test_service_node.cpp.o: in function `rclcpp::Service<test_custom_srv::srv::CircleSquare>::Service(std::shared_ptr<rcl_node_s>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, rclcpp::AnyServiceCallback<test_custom_srv::srv::CircleSquare>, rcl_service_options_s&)':
+[0.444s] /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:313: undefined reference to `rosidl_service_type_support_t const* rosidl_typesupport_cpp::get_service_type_support_handle<test_custom_srv::srv::CircleSquare>()'
+[0.463s] collect2: error: ld returned 1 exit status
+[0.463s] gmake[2]: *** [CMakeFiles/test_service_node.dir/build.make:159: test_service_node] Error 1
+[0.463s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_service_node.dir/all] Error 2
+[0.463s] gmake: *** [Makefile:146: all] Error 2
+[0.463s] Invoked command in '/home/robot33-6/student133_ws/build/test_service' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_service -- -j8 -l8

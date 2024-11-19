@@ -1,0 +1,33 @@
+[0.033s] Invoking command in '/home/robot33-6/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/custom_counter -- -j8 -l8
+[0.096s] [ 50%] Building CXX object CMakeFiles/custom_counter_node.dir/src/custom_counter_node.cpp.o
+[2.410s] /home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In member function ‘void TestCounter::message_callback_sub(std_msgs::msg::Int32)’:
+[2.411s] /home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:35:9: warning: operation on ‘((TestCounter*)this)->TestCounter::sub’ may be undefined [-Wsequence-point]
+[2.411s]    35 |     sub = sub++ ;
+[2.411s]       |     ~~~~^~~~~~~
+[2.411s] /home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In member function ‘void TestCounter::message_callback_pub(std_msgs::msg::Int32)’:
+[2.411s] /home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:43:10: warning: operation on ‘((TestCounter*)this)->TestCounter::pub’ may be undefined [-Wsequence-point]
+[2.411s]    43 |      pub = pub++;
+[2.411s]       |      ~~~~^~~~~~~
+[8.654s] [100%] Linking CXX executable custom_counter_node
+[9.035s] [100%] Built target custom_counter_node
+[9.044s] Invoked command in '/home/robot33-6/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/custom_counter -- -j8 -l8
+[9.063s] Invoking command in '/home/robot33-6/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/custom_counter
+[9.070s] -- Install configuration: "Debug"
+[9.070s] -- Installing: /home/robot33-6/student133_ws/install/custom_counter/lib/custom_counter/custom_counter_node
+[9.083s] -- Set runtime path of "/home/robot33-6/student133_ws/install/custom_counter/lib/custom_counter/custom_counter_node" to ""
+[9.084s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/ament_index/resource_index/package_run_dependencies/custom_counter
+[9.084s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/ament_index/resource_index/parent_prefix_path/custom_counter
+[9.084s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/environment/ament_prefix_path.sh
+[9.084s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/environment/ament_prefix_path.dsv
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/environment/path.sh
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/environment/path.dsv
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/local_setup.bash
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/local_setup.sh
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/local_setup.zsh
+[9.085s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/local_setup.dsv
+[9.085s] -- Installing: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.dsv
+[9.086s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/ament_index/resource_index/packages/custom_counter
+[9.086s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/cmake/custom_counterConfig.cmake
+[9.086s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/cmake/custom_counterConfig-version.cmake
+[9.087s] -- Up-to-date: /home/robot33-6/student133_ws/install/custom_counter/share/custom_counter/package.xml
+[9.087s] Invoked command in '/home/robot33-6/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/robot33-6/student133_ws/build/custom_counter

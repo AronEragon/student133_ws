@@ -1,0 +1,36 @@
+[0.031s] Invoking command in '/home/robot33-6/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_custom_publisher -- -j8 -l8
+[0.067s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.355s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.372s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.372s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.372s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.388s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.422s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.504s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.507s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.679s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.915s] -- Found test_custom_msg: 0.0.0 (/home/robot33-6/student133_ws/install/test_custom_msg/share/test_custom_msg/cmake)
+[1.011s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.067s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.067s] -- Configured cppcheck include dirs: 
+[1.067s] -- Configured cppcheck exclude dirs and/or files: 
+[1.068s] -- Added test 'lint_cmake' to check CMake code style
+[1.068s] -- Added test 'uncrustify' to check C / C++ code style
+[1.068s] -- Configured uncrustify additional arguments: 
+[1.069s] -- Added test 'xmllint' to check XML markup files
+[1.069s] -- Configuring done
+[1.072s] CMake Error at CMakeLists.txt:36 (add_executable):
+[1.072s]   Cannot find source file:
+[1.072s] 
+[1.072s]     src/Triangle.cpp
+[1.072s] 
+[1.072s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[1.072s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[1.072s] 
+[1.072s] 
+[1.072s] CMake Error at CMakeLists.txt:36 (add_executable):
+[1.072s]   No SOURCES given to target: Triangle_node
+[1.072s] 
+[1.072s] 
+[1.072s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[1.077s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1

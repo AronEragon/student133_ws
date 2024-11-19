@@ -1,0 +1,322 @@
+[0.000000] (-) TimerEvent: {}
+[0.000137] (test_pkg) JobQueued: {'identifier': 'test_pkg', 'dependencies': OrderedDict()}
+[0.000189] (test_publisher) JobQueued: {'identifier': 'test_publisher', 'dependencies': OrderedDict()}
+[0.000220] (test_subscriber) JobQueued: {'identifier': 'test_subscriber', 'dependencies': OrderedDict()}
+[0.000262] (test_pkg) JobStarted: {'identifier': 'test_pkg'}
+[0.072173] (test_publisher) JobStarted: {'identifier': 'test_publisher'}
+[0.099329] (-) TimerEvent: {}
+[0.121428] (test_subscriber) JobStarted: {'identifier': 'test_subscriber'}
+[0.171827] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'cmake'}
+[0.195977] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'build'}
+[0.196019] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot33-6/student133_ws/build/test_pkg', '--', '-j8', '-l8'], 'cwd': '/home/robot33-6/student133_ws/build/test_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_pkg'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[0.197250] (test_publisher) JobProgress: {'identifier': 'test_publisher', 'progress': 'cmake'}
+[0.197289] (test_publisher) Command: {'cmd': ['/usr/bin/cmake', '/home/robot33-6/student133_ws/src/test_publisher', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/robot33-6/student133_ws/install/test_publisher'], 'cwd': '/home/robot33-6/student133_ws/build/test_publisher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_publisher'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[0.199057] (test_subscriber) JobProgress: {'identifier': 'test_subscriber', 'progress': 'cmake'}
+[0.199237] (test_subscriber) Command: {'cmd': ['/usr/bin/cmake', '/home/robot33-6/student133_ws/src/test_subscriber', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/robot33-6/student133_ws/install/test_subscriber'], 'cwd': '/home/robot33-6/student133_ws/build/test_subscriber', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_subscriber'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[0.200661] (-) TimerEvent: {}
+[0.300900] (-) TimerEvent: {}
+[0.401182] (-) TimerEvent: {}
+[0.501574] (-) TimerEvent: {}
+[0.601836] (-) TimerEvent: {}
+[0.702081] (-) TimerEvent: {}
+[0.776487] (test_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.802152] (-) TimerEvent: {}
+[0.902445] (-) TimerEvent: {}
+[1.002657] (-) TimerEvent: {}
+[1.102985] (-) TimerEvent: {}
+[1.167733] (test_publisher) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.169013] (test_subscriber) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.203071] (-) TimerEvent: {}
+[1.303301] (-) TimerEvent: {}
+[1.403606] (-) TimerEvent: {}
+[1.504112] (-) TimerEvent: {}
+[1.557673] (test_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.604260] (-) TimerEvent: {}
+[1.678266] (test_subscriber) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.679281] (test_publisher) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.704418] (-) TimerEvent: {}
+[1.783551] (test_publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.783683] (test_subscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.804531] (-) TimerEvent: {}
+[1.865758] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.898077] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.904650] (-) TimerEvent: {}
+[1.934095] (test_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.948903] (test_subscriber) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.949028] (test_publisher) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.954955] (test_publisher) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.955072] (test_subscriber) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.955483] (test_publisher) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.955537] (test_subscriber) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.964927] (test_subscriber) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.965096] (test_publisher) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.967994] (test_publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.968119] (test_subscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.975815] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.004773] (-) TimerEvent: {}
+[2.014100] (test_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.052173] (test_subscriber) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.052295] (test_publisher) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.064059] (test_subscriber) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.064143] (test_publisher) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.064335] (test_publisher) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.064390] (test_subscriber) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.064933] (test_publisher) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.064987] (test_subscriber) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.077883] (test_publisher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.077968] (test_subscriber) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.104855] (-) TimerEvent: {}
+[2.138298] (test_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.149131] (test_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.204960] (-) TimerEvent: {}
+[2.221007] (test_subscriber) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.224082] (test_publisher) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[2.305052] (-) TimerEvent: {}
+[2.308321] (test_publisher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.308432] (test_subscriber) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.338600] (test_subscriber) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.338765] (test_publisher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.342485] (test_subscriber) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.342849] (test_publisher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.352136] (test_subscriber) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.352394] (test_publisher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.368758] (test_publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.368928] (test_subscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.369181] (test_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.384243] (test_publisher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.384488] (test_subscriber) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.405212] (-) TimerEvent: {}
+[2.456129] (test_publisher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.456336] (test_subscriber) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.457792] (test_publisher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.458050] (test_subscriber) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.505319] (-) TimerEvent: {}
+[2.605550] (-) TimerEvent: {}
+[2.615458] (test_subscriber) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.617006] (test_publisher) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.634481] (test_subscriber) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.639144] (test_publisher) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.668784] (test_subscriber) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.673523] (test_publisher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.675745] (test_subscriber) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.680549] (test_publisher) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.705693] (-) TimerEvent: {}
+[2.742969] (test_publisher) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.743139] (test_subscriber) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.743324] (test_subscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.743419] (test_publisher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.746819] (test_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.805784] (-) TimerEvent: {}
+[2.823718] (test_subscriber) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.824054] (test_publisher) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.824739] (test_subscriber) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.824952] (test_publisher) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.893623] (test_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.893785] (test_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.893856] (test_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.894368] (test_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.895318] (test_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.895428] (test_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.895808] (test_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.897453] (test_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.905897] (-) TimerEvent: {}
+[2.938032] (test_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[2.939282] (test_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/robot33-6/student133_ws/build/test_pkg\n'}
+[2.965447] (test_publisher) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.966209] (test_subscriber) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.986553] (test_pkg) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target test_pkg_node\n'}
+[3.005614] (test_pkg) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/test_pkg_node.dir/src/test_pkg_node.cpp.o\n'}
+[3.005932] (-) TimerEvent: {}
+[3.028830] (test_publisher) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.029261] (test_publisher) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.029376] (test_publisher) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.029868] (test_publisher) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.030739] (test_publisher) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.030849] (test_publisher) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.030951] (test_subscriber) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.031240] (test_publisher) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.031343] (test_subscriber) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.031433] (test_subscriber) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.031786] (test_subscriber) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.032262] (test_publisher) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.032615] (test_subscriber) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.032712] (test_subscriber) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.032996] (test_subscriber) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.033880] (test_subscriber) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.044262] (test_publisher) StdoutLine: {'line': b'-- Generating done\n'}
+[3.045318] (test_subscriber) StdoutLine: {'line': b'-- Generating done\n'}
+[3.045508] (test_publisher) StdoutLine: {'line': b'-- Build files have been written to: /home/robot33-6/student133_ws/build/test_publisher\n'}
+[3.046659] (test_subscriber) StdoutLine: {'line': b'-- Build files have been written to: /home/robot33-6/student133_ws/build/test_subscriber\n'}
+[3.053085] (test_publisher) CommandEnded: {'returncode': 0}
+[3.053700] (test_publisher) JobProgress: {'identifier': 'test_publisher', 'progress': 'build'}
+[3.053751] (test_publisher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot33-6/student133_ws/build/test_publisher', '--', '-j8', '-l8'], 'cwd': '/home/robot33-6/student133_ws/build/test_publisher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_publisher'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[3.054843] (test_subscriber) CommandEnded: {'returncode': 0}
+[3.055735] (test_subscriber) JobProgress: {'identifier': 'test_subscriber', 'progress': 'build'}
+[3.055778] (test_subscriber) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot33-6/student133_ws/build/test_subscriber', '--', '-j8', '-l8'], 'cwd': '/home/robot33-6/student133_ws/build/test_subscriber', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_subscriber'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[3.090518] (test_publisher) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o\n'}
+[3.090699] (test_subscriber) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/test_subscriber_node.dir/src/test_subscriber_node.cpp.o\n'}
+[3.106036] (-) TimerEvent: {}
+[3.206311] (-) TimerEvent: {}
+[3.306595] (-) TimerEvent: {}
+[3.406897] (-) TimerEvent: {}
+[3.507156] (-) TimerEvent: {}
+[3.607457] (-) TimerEvent: {}
+[3.707747] (-) TimerEvent: {}
+[3.808048] (-) TimerEvent: {}
+[3.908394] (-) TimerEvent: {}
+[4.008693] (-) TimerEvent: {}
+[4.108987] (-) TimerEvent: {}
+[4.209293] (-) TimerEvent: {}
+[4.309631] (-) TimerEvent: {}
+[4.409963] (-) TimerEvent: {}
+[4.510262] (-) TimerEvent: {}
+[4.610555] (-) TimerEvent: {}
+[4.710860] (-) TimerEvent: {}
+[4.811159] (-) TimerEvent: {}
+[4.911462] (-) TimerEvent: {}
+[5.011764] (-) TimerEvent: {}
+[5.112061] (-) TimerEvent: {}
+[5.212363] (-) TimerEvent: {}
+[5.312664] (-) TimerEvent: {}
+[5.412952] (-) TimerEvent: {}
+[5.513258] (-) TimerEvent: {}
+[5.613568] (-) TimerEvent: {}
+[5.713873] (-) TimerEvent: {}
+[5.814278] (-) TimerEvent: {}
+[5.914566] (-) TimerEvent: {}
+[6.014864] (-) TimerEvent: {}
+[6.115146] (-) TimerEvent: {}
+[6.215445] (-) TimerEvent: {}
+[6.315738] (-) TimerEvent: {}
+[6.393966] (test_pkg) StdoutLine: {'line': b'[100%] Linking CXX executable test_pkg_node\n'}
+[6.415848] (-) TimerEvent: {}
+[6.516142] (-) TimerEvent: {}
+[6.616519] (-) TimerEvent: {}
+[6.716775] (-) TimerEvent: {}
+[6.817119] (-) TimerEvent: {}
+[6.852272] (test_pkg) StdoutLine: {'line': b'[100%] Built target test_pkg_node\n'}
+[6.860925] (test_pkg) CommandEnded: {'returncode': 0}
+[6.879543] (test_pkg) JobProgress: {'identifier': 'test_pkg', 'progress': 'install'}
+[6.886382] (test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot33-6/student133_ws/build/test_pkg'], 'cwd': '/home/robot33-6/student133_ws/build/test_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_pkg'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[6.893161] (test_pkg) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[6.898796] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/lib/test_pkg/test_pkg_node\n'}
+[6.899862] (test_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/robot33-6/student133_ws/install/test_pkg/lib/test_pkg/test_pkg_node" to ""\n'}
+[6.899966] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/ament_index/resource_index/package_run_dependencies/test_pkg\n'}
+[6.900026] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/ament_index/resource_index/parent_prefix_path/test_pkg\n'}
+[6.900186] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/environment/ament_prefix_path.sh\n'}
+[6.900240] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/environment/ament_prefix_path.dsv\n'}
+[6.900292] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/environment/path.sh\n'}
+[6.900343] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/environment/path.dsv\n'}
+[6.900514] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/local_setup.bash\n'}
+[6.900730] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/local_setup.sh\n'}
+[6.900782] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/local_setup.zsh\n'}
+[6.900830] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/local_setup.dsv\n'}
+[6.900879] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.dsv\n'}
+[6.900927] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/ament_index/resource_index/packages/test_pkg\n'}
+[6.900981] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig.cmake\n'}
+[6.901031] (test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/cmake/test_pkgConfig-version.cmake\n'}
+[6.901079] (test_pkg) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_pkg/share/test_pkg/package.xml\n'}
+[6.902044] (test_pkg) CommandEnded: {'returncode': 0}
+[6.917453] (-) TimerEvent: {}
+[7.017754] (-) TimerEvent: {}
+[7.118338] (-) TimerEvent: {}
+[7.123169] (test_pkg) JobEnded: {'identifier': 'test_pkg', 'rc': 0}
+[7.218450] (-) TimerEvent: {}
+[7.318687] (-) TimerEvent: {}
+[7.418917] (-) TimerEvent: {}
+[7.519140] (-) TimerEvent: {}
+[7.619475] (-) TimerEvent: {}
+[7.680139] (test_publisher) StdoutLine: {'line': b'[100%] Linking CXX executable test_publisher_node\n'}
+[7.719585] (-) TimerEvent: {}
+[7.819867] (-) TimerEvent: {}
+[7.855720] (test_publisher) StdoutLine: {'line': b'[100%] Built target test_publisher_node\n'}
+[7.863386] (test_publisher) CommandEnded: {'returncode': 0}
+[7.880921] (test_publisher) JobProgress: {'identifier': 'test_publisher', 'progress': 'install'}
+[7.881006] (test_publisher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot33-6/student133_ws/build/test_publisher'], 'cwd': '/home/robot33-6/student133_ws/build/test_publisher', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_publisher'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[7.887267] (test_publisher) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[7.887444] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/lib/test_publisher/test_publisher_node\n'}
+[7.889685] (test_publisher) StdoutLine: {'line': b'-- Set runtime path of "/home/robot33-6/student133_ws/install/test_publisher/lib/test_publisher/test_publisher_node" to ""\n'}
+[7.889870] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/ament_index/resource_index/package_run_dependencies/test_publisher\n'}
+[7.890280] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/ament_index/resource_index/parent_prefix_path/test_publisher\n'}
+[7.890446] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/environment/ament_prefix_path.sh\n'}
+[7.890537] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/environment/ament_prefix_path.dsv\n'}
+[7.890659] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/environment/path.sh\n'}
+[7.890788] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/environment/path.dsv\n'}
+[7.890878] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/local_setup.bash\n'}
+[7.891040] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/local_setup.sh\n'}
+[7.891130] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/local_setup.zsh\n'}
+[7.891250] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/local_setup.dsv\n'}
+[7.891374] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.dsv\n'}
+[7.891524] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/ament_index/resource_index/packages/test_publisher\n'}
+[7.891690] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/cmake/test_publisherConfig.cmake\n'}
+[7.891815] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/cmake/test_publisherConfig-version.cmake\n'}
+[7.891957] (test_publisher) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_publisher/share/test_publisher/package.xml\n'}
+[7.893210] (test_publisher) CommandEnded: {'returncode': 0}
+[7.920471] (-) TimerEvent: {}
+[8.002948] (test_publisher) JobEnded: {'identifier': 'test_publisher', 'rc': 0}
+[8.020563] (-) TimerEvent: {}
+[8.120800] (-) TimerEvent: {}
+[8.221074] (-) TimerEvent: {}
+[8.321348] (-) TimerEvent: {}
+[8.421572] (-) TimerEvent: {}
+[8.521788] (-) TimerEvent: {}
+[8.621967] (-) TimerEvent: {}
+[8.722152] (-) TimerEvent: {}
+[8.822354] (-) TimerEvent: {}
+[8.922555] (-) TimerEvent: {}
+[9.022758] (-) TimerEvent: {}
+[9.122954] (-) TimerEvent: {}
+[9.223155] (-) TimerEvent: {}
+[9.323355] (-) TimerEvent: {}
+[9.423555] (-) TimerEvent: {}
+[9.523765] (-) TimerEvent: {}
+[9.623980] (-) TimerEvent: {}
+[9.724193] (-) TimerEvent: {}
+[9.824434] (-) TimerEvent: {}
+[9.924658] (-) TimerEvent: {}
+[10.024901] (-) TimerEvent: {}
+[10.125133] (-) TimerEvent: {}
+[10.225363] (-) TimerEvent: {}
+[10.325576] (-) TimerEvent: {}
+[10.425788] (-) TimerEvent: {}
+[10.526034] (-) TimerEvent: {}
+[10.626341] (-) TimerEvent: {}
+[10.726611] (-) TimerEvent: {}
+[10.826839] (-) TimerEvent: {}
+[10.927015] (-) TimerEvent: {}
+[11.027285] (-) TimerEvent: {}
+[11.127543] (-) TimerEvent: {}
+[11.227795] (-) TimerEvent: {}
+[11.328069] (-) TimerEvent: {}
+[11.428365] (-) TimerEvent: {}
+[11.506266] (test_subscriber) StdoutLine: {'line': b'[100%] Linking CXX executable test_subscriber_node\n'}
+[11.528465] (-) TimerEvent: {}
+[11.628717] (-) TimerEvent: {}
+[11.728963] (-) TimerEvent: {}
+[11.825666] (test_subscriber) StdoutLine: {'line': b'[100%] Built target test_subscriber_node\n'}
+[11.829051] (-) TimerEvent: {}
+[11.832788] (test_subscriber) CommandEnded: {'returncode': 0}
+[11.849807] (test_subscriber) JobProgress: {'identifier': 'test_subscriber', 'progress': 'install'}
+[11.849865] (test_subscriber) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot33-6/student133_ws/build/test_subscriber'], 'cwd': '/home/robot33-6/student133_ws/build/test_subscriber', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LC_TIME', 'ru_RU.UTF-8'), ('SNAP_COMMON', '/var/snap/qtcreator-ros/common'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'robot33-6'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/snap/qtcreator-ros/107/lib:/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu'), ('SHLVL', '21'), ('SNAP_UID', '1000'), ('HOME', '/home/robot33-6'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('SNAP_USER_DATA', '/home/robot33-6/snap/qtcreator-ros/107'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '1390'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SYSTEMD_EXEC_PID', '1574'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5279'), ('SNAP_REVISION', '107'), ('COLCON_PREFIX_PATH', '/home/robot33-6/student133_ws/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'robot33-6'), ('JOURNAL_STREAM', '8:28886'), ('SNAP_CONTEXT', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('SNAP_VERSION', '12.0.2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('USERNAME', 'robot33-6'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('SNAP_INSTANCE_NAME', 'qtcreator-ros'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', 'deb91556666a4284a581748db063de8e'), ('SESSION_MANAGER', 'local/robot33-6:@/tmp/.ICE-unix/1544,unix/robot33-6:/tmp/.ICE-unix/1544'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/qtcreator-ros_qtcreator-ros.desktop'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('SNAP_DATA', '/var/snap/qtcreator-ros/107'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NSDUJ2'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('AMENT_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('SNAP_ARCH', 'amd64'), ('SNAP_COOKIE', 'zfxwyVEa0dSM0vT388UHnSyWy-Mv84K8RE-CWR0OLT2wc9JrOksa'), ('SNAP_USER_COMMON', '/home/robot33-6/snap/qtcreator-ros/common'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('SNAP_NAME', 'qtcreator-ros'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot33-6/student133_ws/build/test_subscriber'), ('QT_QPA_PLATFORM', 'wayland;xcb'), ('SNAP_REAL_HOME', '/home/robot33-6'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/qtcreator-ros/107'), ('SNAP_EUID', '1000'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robot33-6/student133_ws/install/test_pkg:/opt/ros/humble'), ('LIBGL_DRIVERS_PATH', '/snap/qtcreator-ros/107/usr/lib/x86_64-linux-gnu/dri')]), 'shell': False}
+[11.855748] (test_subscriber) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[11.855929] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/lib/test_subscriber/test_subscriber_node\n'}
+[11.863508] (test_subscriber) StdoutLine: {'line': b'-- Set runtime path of "/home/robot33-6/student133_ws/install/test_subscriber/lib/test_subscriber/test_subscriber_node" to ""\n'}
+[11.863660] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/ament_index/resource_index/package_run_dependencies/test_subscriber\n'}
+[11.863719] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/ament_index/resource_index/parent_prefix_path/test_subscriber\n'}
+[11.863824] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/environment/ament_prefix_path.sh\n'}
+[11.863946] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/environment/ament_prefix_path.dsv\n'}
+[11.864000] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/environment/path.sh\n'}
+[11.864112] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/environment/path.dsv\n'}
+[11.864182] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/local_setup.bash\n'}
+[11.864262] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/local_setup.sh\n'}
+[11.864346] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/local_setup.zsh\n'}
+[11.864427] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/local_setup.dsv\n'}
+[11.864509] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.dsv\n'}
+[11.864617] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/ament_index/resource_index/packages/test_subscriber\n'}
+[11.864732] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/cmake/test_subscriberConfig.cmake\n'}
+[11.864816] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/cmake/test_subscriberConfig-version.cmake\n'}
+[11.864902] (test_subscriber) StdoutLine: {'line': b'-- Installing: /home/robot33-6/student133_ws/install/test_subscriber/share/test_subscriber/package.xml\n'}
+[11.866020] (test_subscriber) CommandEnded: {'returncode': 0}
+[11.929233] (-) TimerEvent: {}
+[11.978828] (test_subscriber) JobEnded: {'identifier': 'test_subscriber', 'rc': 0}
+[11.979322] (-) EventReactorShutdown: {}

@@ -1,0 +1,10 @@
+[0.077s] Invoking command in '/home/eragon/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_pkg -- -j8 -l8
+[0.290s] [ 50%] Building CXX object CMakeFiles/test_pkg_node.dir/src/test_pkg_node.cpp.o
+[4.301s] /home/eragon/student133_ws/src/test_pkg/src/test_pkg_node.cpp: In constructor ‘TestNode::TestNode()’:
+[4.301s] /home/eragon/student133_ws/src/test_pkg/src/test_pkg_node.cpp:11:27: error: class ‘TestNode’ does not have any field named ‘counter’
+[4.301s]    11 |         Node("test_node"),counter(0) //Имя узла
+[4.302s]       |                           ^~~~~~~
+[5.254s] gmake[2]: *** [CMakeFiles/test_pkg_node.dir/build.make:76: CMakeFiles/test_pkg_node.dir/src/test_pkg_node.cpp.o] Ошибка 1
+[5.254s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_pkg_node.dir/all] Ошибка 2
+[5.255s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.258s] Invoked command in '/home/eragon/student133_ws/build/test_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_pkg -- -j8 -l8

@@ -1,0 +1,20 @@
+Consolidate compiler generated dependencies of target test_visualization_node
+[ 50%] Building CXX object CMakeFiles/test_visualization_node.dir/src/test_visualization_node.cpp.o
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp: In member function ‘void MarkerPublisher::timer_callback()’:
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp:72:5: error: ‘marker’ was not declared in this scope
+   72 |     marker.msg.color.a = 1.0; //Прозрачность
+      |     ^~~~~~
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp:77:16: error: ‘using element_type = class rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > >’ {aka ‘class rclcpp::Publisher<visualization_msgs::msg::Marker_<std::allocator<void> > >’} has no member named ‘publisher’; did you mean ‘Publisher’?
+   77 |     publisher->publisher(marker_msg);
+      |                ^~~~~~~~~
+      |                Publisher
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp: In function ‘int main(int, char**)’:
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp:85:14: warning: unused parameter ‘argc’ [-Wunused-parameter]
+   85 | int main(int argc, char **argv)
+      |          ~~~~^~~~
+/home/robot33-6/student133_ws/src/test_visualization/src/test_visualization_node.cpp:85:27: warning: unused parameter ‘argv’ [-Wunused-parameter]
+   85 | int main(int argc, char **argv)
+      |                    ~~~~~~~^~~~
+gmake[2]: *** [CMakeFiles/test_visualization_node.dir/build.make:76: CMakeFiles/test_visualization_node.dir/src/test_visualization_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_visualization_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

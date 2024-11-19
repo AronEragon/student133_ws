@@ -1,0 +1,47 @@
+Consolidate compiler generated dependencies of target test_basic_publisher
+[ 50%] Building CXX object CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In constructor ‘TestBasicPublisher::TestBasicPublisher()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:13:9: error: class ‘TestBasicPublisher’ does not have any field named ‘counter’
+   13 |         counter(0)
+      |         ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:18:48: error: ‘TestNode’ has not been declared
+   18 |                                     std::bind(&TestNode::timer_callback,
+      |                                                ^~~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In member function ‘void TestBasicPublisher::timer_callback()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:27:9: error: ‘ste_msgs’ has not been declared
+   27 |         ste_msgs::msg::String messege;
+      |         ^~~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:9: error: ‘message’ was not declared in this scope
+   28 |         message.data = "Counter "+ std::to_strong(counter);
+      |         ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:41: error: ‘to_strong’ is not a member of ‘std’; did you mean ‘to_string’?
+   28 |         message.data = "Counter "+ std::to_strong(counter);
+      |                                         ^~~~~~~~~
+      |                                         to_string
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:51: error: ‘counter’ was not declared in this scope
+   28 |         message.data = "Counter "+ std::to_strong(counter);
+      |                                                   ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:9: error: ‘RCLSPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_INFO’?
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |         ^~~~~~~~~~~
+      |         RCLCPP_INFO
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In function ‘int main(int, char**)’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:35: error: ‘TestNode’ was not declared in this scope
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                                   ^~~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:44: error: no matching function for call to ‘make_shared<<expression error> >()’
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/11/memory:77,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  875 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:44: error: template argument 1 is invalid
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+gmake[2]: *** [CMakeFiles/test_basic_publisher.dir/build.make:76: CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_basic_publisher.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

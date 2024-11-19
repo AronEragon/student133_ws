@@ -1,0 +1,12 @@
+[0.027s] Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.077s] Consolidate compiler generated dependencies of target Triangle_node
+[0.093s] [ 50%] Built target test_subscriber_node
+[0.094s] [ 75%] Building CXX object CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o
+[0.306s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:3:10: fatal error: test_custom_msg/msg/triangle.hpp: No such file or directory
+[0.306s]     3 | #include <test_custom_msg/msg/triangle.hpp>
+[0.306s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.306s] compilation terminated.
+[0.310s] gmake[2]: *** [CMakeFiles/Triangle_node.dir/build.make:76: CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o] Error 1
+[0.310s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Triangle_node.dir/all] Error 2
+[0.310s] gmake: *** [Makefile:146: all] Error 2
+[0.311s] Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8

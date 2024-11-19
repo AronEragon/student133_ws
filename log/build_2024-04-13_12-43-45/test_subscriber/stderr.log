@@ -1,0 +1,78 @@
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:30: error: ‘test_custom_msg’ was not declared in this scope
+   20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+      |                              ^~~~~~~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 1 is invalid
+   20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+      |                                                            ^
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 3 is invalid
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 4 is invalid
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:60: error: template argument 5 is invalid
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:20:65: error: expected ‘;’ at end of member declaration
+   20 |       rclcpp :: Subscription<test_custom_msg::msg::Triangle> :: SharedPtr
+      |                                                                 ^~~~~~~~~
+      |                                                                          ;
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:21:51: error: ‘subscriber’ does not name a type; did you mean ‘PartSubscriber’?
+   21 |                                                   subscriber;
+      |                                                   ^~~~~~~~~~
+      |                                                   PartSubscriber
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:29: error: ‘test_custom_msg’ does not name a type
+   24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+      |                             ^~~~~~~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:49: error: expected unqualified-id before ‘::’ token
+   24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+      |                                                 ^~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:49: error: expected ‘)’ before ‘::’ token
+   24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+      |                      ~                          ^~
+      |                                                 )
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:46: error: expected ‘;’ at end of member declaration
+   24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+      |                                              ^~~
+      |                                                 ;
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:24:51: error: ‘Triangle’ in namespace ‘::’ does not name a type
+   24 | void message_callback(const test_custom_msg::msg::Triangle &msg)
+      |                                                   ^~~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp: In constructor ‘PartSubscriber::PartSubscriber()’:
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:10:5: error: ‘subscriber’ was not declared in this scope; did you mean ‘PartSubscriber’?
+   10 |     subscriber =
+      |     ^~~~~~~~~~
+      |     PartSubscriber
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:11:41: error: ‘test_custom_msg’ was not declared in this scope
+   11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+      |                                         ^~~~~~~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:11:21: error: parse error in template argument list
+   11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:12:13: error: no matching function for call to ‘PartSubscriber::create_subscription<<expression error> >(const char [10], int, std::_Bind_helper<false, void (PartSubscriber::*)(...), PartSubscriber*, const std::_Placeholder<1>&>::type)’
+   11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   12 |             ("/triangle", 8,
+      |             ^~~~~~~~~~~~~~~~
+   13 |              std :: bind (&PartSubscriber::message_callback,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   14 |                           this,
+      |                           ~~~~~
+   15 |                           std:: placeholders::_1));
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:1:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
+  219 |   create_subscription(
+      |   ^~~~~~~~~~~~~~~~~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3: note:   template argument deduction/substitution failed:
+/home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:12:13: error: template argument 1 is invalid
+   11 |             this -> create_subscription<test_custom_msg::msg::Triangle>
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   12 |             ("/triangle", 8,
+      |             ^~~~~~~~~~~~~~~~
+   13 |              std :: bind (&PartSubscriber::message_callback,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   14 |                           this,
+      |                           ~~~~~
+   15 |                           std:: placeholders::_1));
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/Triangle_node.dir/build.make:76: CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Triangle_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

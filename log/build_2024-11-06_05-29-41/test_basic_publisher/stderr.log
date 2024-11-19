@@ -1,0 +1,441 @@
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In constructor ‘TestBasicPublisher::TestBasicPublisher()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:13:9: error: class ‘TestBasicPublisher’ does not have any field named ‘counter’
+   13 |         counter(0)
+      |         ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In member function ‘void TestBasicPublisher::timer_callback()’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:41: error: ‘to_strong’ is not a member of ‘std’; did you mean ‘to_string’?
+   28 |         message.data = "Counter "+ std::to_strong(counter);
+      |                                         ^~~~~~~~~
+      |                                         to_string
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:28:51: error: ‘counter’ was not declared in this scope
+   28 |         message.data = "Counter "+ std::to_strong(counter);
+      |                                                   ^~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:52: error: no match for ‘operator<<’ (operand types are ‘const char [11]’ and ‘std_msgs::msg::String_<std::allocator<void> >::_data_type’ {aka ‘std::__cxx11::basic_string<char>’})
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                        ~~~~~~~~~~~~^~~~~~~~~~~~~~
+      |                                        |                     |
+      |                                        const char [11]       std_msgs::msg::String_<std::allocator<void> >::_data_type {aka std::__cxx11::basic_string<char>}
+In file included from /usr/include/c++/11/memory:77,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:70:5: note: candidate: ‘template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__shared_ptr<_Tp, _Lp>&)’
+   70 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:70:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/stdexcept:39,
+                 from /usr/include/c++/11/system_error:41,
+                 from /usr/include/c++/11/mutex:42,
+                 from /usr/include/c++/11/future:38,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/string_view:667:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::basic_string_view<_CharT, _Traits>)’
+  667 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:667:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/stdexcept:39,
+                 from /usr/include/c++/11/system_error:41,
+                 from /usr/include/c++/11/mutex:42,
+                 from /usr/include/c++/11/future:38,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/bits/basic_string.h:6531:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6531 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6531:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/mutex:42,
+                 from /usr/include/c++/11/future:38,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/system_error:279:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::error_code&)’
+  279 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+/usr/include/c++/11/system_error:279:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/thread:92:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::thread::id)’
+   92 |     operator<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+      |     ^~~~~~~~
+/usr/include/c++/11/thread:92:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:513:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, _CharT)’
+  513 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:513:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:518:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, char)’
+  518 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:518:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:524:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)’
+  524 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:524:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:530:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)’
+  530 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:530:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:535:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)’
+  535 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:535:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:594:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const _CharT*)’
+  594 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:594:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/ostream:829,
+                 from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/bits/ostream.tcc:321:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const char*)’
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:611:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)’
+  611 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:611:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:624:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)’
+  624 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:624:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:629:5: note: candidate: ‘template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)’
+  629 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:629:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<char, _Traits>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /usr/include/c++/11/iostream:39,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/ostream:750:5: note: candidate: ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)’
+  750 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+/usr/include/c++/11/ostream:750:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/ostream: In substitution of ‘template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = const char (&)[11]; _Tp = std::__cxx11::basic_string<char>]’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62:   required from here
+/usr/include/c++/11/ostream:750:5: error: no type named ‘type’ in ‘struct std::enable_if<false, void>’
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:79:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Resetiosflags)’
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:79:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:109:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setiosflags)’
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:109:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:143:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setbase)’
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:143:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:178:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setfill<_CharT>)’
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:178:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:208:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setprecision)’
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:208:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:238:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setw)’
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:238:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:311:5: note: candidate: ‘template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_money<_MoneyT>)’
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:311:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+In file included from /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:19,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:15,
+                 from /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:9,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/iomanip:363:5: note: candidate: ‘template<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_time<_CharT>)’
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+/usr/include/c++/11/iomanip:363:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:62: note:   mismatched types ‘std::basic_ostream<_Ch, _Tr>’ and ‘const char [11]’
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |                                                              ^~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:30:9: error: ‘RCLSPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_INFO’?
+   30 |         RCLSPP_INFO(this->get_logger(),"Publised: "<<message.data);
+      |         ^~~~~~~~~~~
+      |         RCLCPP_INFO
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp: In function ‘int main(int, char**)’:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:35: error: ‘TestNode’ was not declared in this scope
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                                   ^~~~~~~~
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:44: error: no matching function for call to ‘make_shared<<expression error> >()’
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /usr/include/c++/11/memory:77,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:2:
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+  875 |     make_shared(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_basic_publisher/src/test_basic_publisher.cpp:38:44: error: template argument 1 is invalid
+   38 |     rclcpp::spin(std::make_shared<TestNode>());
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+gmake[2]: *** [CMakeFiles/test_basic_publisher.dir/build.make:76: CMakeFiles/test_basic_publisher.dir/src/test_basic_publisher.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_basic_publisher.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

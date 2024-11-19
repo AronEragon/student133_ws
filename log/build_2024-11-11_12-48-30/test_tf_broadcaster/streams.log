@@ -1,0 +1,30 @@
+[0.069s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.258s] Consolidate compiler generated dependencies of target test_tf_listener_node
+[0.305s] [ 25%] Building CXX object CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o
+[0.314s] [ 75%] Built target test_tf_broadcaster_node
+[5.890s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In constructor ‘TestTfListener::TestTfListener()’:
+[5.890s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:49: error: ‘TransformLstener’ is not a member of ‘tf2_ros’; did you mean ‘TransformListener’?
+[5.890s]    21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+[5.891s]       |                                                 ^~~~~~~~~~~~~~~~
+[5.891s]       |                                                 TransformListener
+[5.891s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:66: error: no matching function for call to ‘make_shared<<expression error> >(tf2_ros::Buffer&)’
+[5.891s]    21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+[5.891s]       |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[5.891s] In file included from /usr/include/c++/11/memory:77,
+[5.891s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[5.892s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+[5.892s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note: candidate: ‘template<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)’
+[5.892s]   875 |     make_shared(_Args&&... __args)
+[5.892s]       |     ^~~~~~~~~~~
+[5.892s] /usr/include/c++/11/bits/shared_ptr.h:875:5: note:   template argument deduction/substitution failed:
+[5.892s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:21:66: error: template argument 1 is invalid
+[5.892s]    21 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+[5.892s]       |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+[5.911s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘void TestTfListener::timer_callback()’:
+[5.912s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:61:20: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+[5.912s]    61 |             return 0;
+[5.912s]       |                    ^
+[6.736s] gmake[2]: *** [CMakeFiles/test_tf_listener_node.dir/build.make:76: CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o] Ошибка 1
+[6.737s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_tf_listener_node.dir/all] Ошибка 2
+[6.737s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.742s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

@@ -1,0 +1,110 @@
+Consolidate compiler generated dependencies of target test_tf_listener_node
+[ 50%] Built target test_tf_broadcaster_node
+[ 75%] Building CXX object CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:12:5: error: ISO C++ forbids declaration of ‘TestTfBroadcasterTestTfListener’ with no type [-fpermissive]
+   12 |     TestTfBroadcasterTestTfListener():
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:30: error: ‘Buffer’ is not a member of ‘tf2_ros’
+   29 |     std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+      |                              ^~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:36: error: template argument 1 is invalid
+   29 |     std::unique_ptr<tf2_ros::Buffer> tf_buffer;
+      |                                    ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:29:36: error: template argument 2 is invalid
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘int TestTfListener::TestTfBroadcasterTestTfListener()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:13:9: error: only constructors take member initializers
+   13 |         Node("test_tf_listener_node"),
+      |         ^~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:47: error: ‘Buffer’ is not a member of ‘tf2_ros’
+   19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |                                               ^~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: no matching function for call to ‘make_unique<<expression error> >(rclcpp::Clock::SharedPtr)’
+   19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:76,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/usr/include/c++/11/bits/unique_ptr.h:961:5: note: candidate: ‘template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)’
+  961 |     make_unique(_Args&&... __args)
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:961:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+   19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:76,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/usr/include/c++/11/bits/unique_ptr.h:967:5: note: candidate: ‘template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)’
+  967 |     make_unique(size_t __num)
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:967:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+   19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/memory:76,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/usr/include/c++/11/bits/unique_ptr.h:973:5: note: candidate: ‘template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...)’ (deleted)
+  973 |     make_unique(_Args&&...) = delete;
+      |     ^~~~~~~~~~~
+/usr/include/c++/11/bits/unique_ptr.h:973:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:19:54: error: template argument 1 is invalid
+   19 |         tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:20:49: error: ‘TransformLstener’ is not a member of ‘tf2_ros’; did you mean ‘TransformListener’?
+   20 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+      |                                                 ^~~~~~~~~~~~~~~~
+      |                                                 TransformListener
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:20:67: error: invalid type argument of unary ‘*’ (have ‘int’)
+   20 |         tf_listener = std::make_shared<tf2_ros::TransformLstener>(*tf_buffer);
+      |                                                                   ^~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:25:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   25 |     }
+      |     ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp: In member function ‘void TestTfListener::timer_callback()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:35:26: error: base operand of ‘->’ is not a pointer
+   35 |             t = tf_buffer->lookupTransform(source_frame,
+      |                          ^~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:60:20: error: return-statement with a value, in function returning ‘void’ [-fpermissive]
+   60 |             return 0;
+      |                    ^
+In file included from /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/memory:64,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = TestTfListener; _Args = {}; _Tp = TestTfListener]’:
+/usr/include/c++/11/bits/alloc_traits.h:516:17:   required from ‘static void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = TestTfListener; _Args = {}; _Tp = TestTfListener; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<TestTfListener>]’
+/usr/include/c++/11/bits/shared_ptr_base.h:519:39:   required from ‘std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = TestTfListener; _Alloc = std::allocator<TestTfListener>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr_base.h:650:16:   required from ‘std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = TestTfListener; _Alloc = std::allocator<TestTfListener>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:   required from ‘std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TestTfListener>; _Args = {}; _Tp = TestTfListener; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr.h:409:59:   required from ‘std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TestTfListener>; _Args = {}; _Tp = TestTfListener]’
+/usr/include/c++/11/bits/shared_ptr.h:862:14:   required from ‘std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = TestTfListener; _Alloc = std::allocator<TestTfListener>; _Args = {}]’
+/usr/include/c++/11/bits/shared_ptr.h:878:39:   required from ‘std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = TestTfListener; _Args = {}]’
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:71:50:   required from here
+/usr/include/c++/11/ext/new_allocator.h:162:11: error: use of deleted function ‘TestTfListener::TestTfListener()’
+  162 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:10:7: note: ‘TestTfListener::TestTfListener()’ is implicitly deleted because the default definition would be ill-formed:
+   10 | class TestTfListener: public rclcpp::Node {
+      |       ^~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:10:7: error: no matching function for call to ‘rclcpp::Node::Node()’
+In file included from /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_listener_node.cpp:1:
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3: note: candidate: ‘rclcpp::Node::Node(const rclcpp::Node&, const string&)’
+ 1294 |   Node(
+      |   ^~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3: note:   candidate expects 2 arguments, 0 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12: note: candidate: ‘rclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)’
+  101 |   explicit Node(
+      |            ^~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12: note:   candidate expects 3 arguments, 0 provided
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12: note: candidate: ‘rclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)’
+   89 |   explicit Node(
+      |            ^~~~
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12: note:   candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/test_tf_listener_node.dir/build.make:76: CMakeFiles/test_tf_listener_node.dir/src/test_tf_listener_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/test_tf_listener_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

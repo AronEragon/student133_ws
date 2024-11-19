@@ -1,0 +1,16 @@
+/home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:37:3: error: ‘clcpp’ does not name a type
+   37 |   clcpp::Publisher<std_msgs::msg::Int32>::SharedPtr
+      |   ^~~~~
+/home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: In constructor ‘TestPublisher::TestPublisher()’:
+/home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:18:5: error: ‘publisher’ was not declared in this scope; did you mean ‘TestPublisher’?
+   18 |     publisher = this->create_publisher<std_msgs::msg::Int32>
+      |     ^~~~~~~~~
+      |     TestPublisher
+/home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp: In member function ‘void TestPublisher::timer_callback()’:
+/home/robot33-6/student133_ws/src/test_publisher/src/test_publisher_node.cpp:53:9: error: ‘publisher’ was not declared in this scope; did you mean ‘TestPublisher’?
+   53 |         publisher->publish(msg);
+      |         ^~~~~~~~~
+      |         TestPublisher
+gmake[2]: *** [CMakeFiles/test_publisher_node.dir/build.make:76: CMakeFiles/test_publisher_node.dir/src/test_publisher_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

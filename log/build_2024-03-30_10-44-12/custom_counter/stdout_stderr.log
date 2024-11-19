@@ -1,0 +1,24 @@
+Consolidate compiler generated dependencies of target custom_counter_node
+[ 50%] Building CXX object CMakeFiles/custom_counter_node.dir/src/custom_counter_node.cpp.o
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:64:2: error: expected ‘}’ at end of input
+   64 | }
+      |  ^
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:6:41: note: to match this ‘{’
+    6 | class TestCounter : public rclcpp::Node {
+      |                                         ^
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In constructor ‘TestCounter::TestCounter()’:
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:18:5: error: ‘timer’ was not declared in this scope; did you mean ‘timex’?
+   18 |     timer = this->create_wall_timer(1s, std::bind(&TestCounter::timer_callback, this));
+      |     ^~~~~
+      |     timex
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: In member function ‘int TestCounter::main(int, char**)’:
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:64:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   64 | }
+      | ^
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp: At global scope:
+/home/robot33-6/student133_ws/src/custom_counter/src/custom_counter_node.cpp:64:2: error: expected unqualified-id at end of input
+   64 | }
+      |  ^
+gmake[2]: *** [CMakeFiles/custom_counter_node.dir/build.make:76: CMakeFiles/custom_counter_node.dir/src/custom_counter_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/custom_counter_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

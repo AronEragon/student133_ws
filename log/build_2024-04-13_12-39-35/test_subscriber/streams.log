@@ -1,0 +1,34 @@
+[0.034s] Invoking command in '/home/robot33-6/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8
+[0.066s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.231s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.257s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.258s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.263s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.274s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.359s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.359s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.446s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.571s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.627s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.627s] -- Configured cppcheck include dirs: 
+[0.627s] -- Configured cppcheck exclude dirs and/or files: 
+[0.627s] -- Added test 'lint_cmake' to check CMake code style
+[0.628s] -- Added test 'uncrustify' to check C / C++ code style
+[0.628s] -- Configured uncrustify additional arguments: 
+[0.628s] -- Added test 'xmllint' to check XML markup files
+[0.629s] -- Configuring done
+[0.641s] -- Generating done
+[0.643s] -- Build files have been written to: /home/robot33-6/student133_ws/build/test_subscriber
+[0.663s] Consolidate compiler generated dependencies of target test_subscriber_node
+[0.668s] [ 25%] Building CXX object CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o
+[0.673s] /home/robot33-6/student133_ws/src/test_subscriber/src/subscriber_triangle.cpp:1:10: fatal error: rclcpp/rclcpp.hpp: No such file or directory
+[0.673s]     1 | #include <rclcpp/rclcpp.hpp>
+[0.673s]       |          ^~~~~~~~~~~~~~~~~~~
+[0.673s] compilation terminated.
+[0.674s] [ 75%] Built target test_subscriber_node
+[0.674s] gmake[2]: *** [CMakeFiles/Triangle_node.dir/build.make:76: CMakeFiles/Triangle_node.dir/src/subscriber_triangle.cpp.o] Error 1
+[0.674s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/Triangle_node.dir/all] Error 2
+[0.674s] gmake[1]: *** Waiting for unfinished jobs....
+[0.675s] gmake: *** [Makefile:146: all] Error 2
+[0.676s] Invoked command in '/home/robot33-6/student133_ws/build/test_subscriber' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/robot33-6/student133_ws/build/test_subscriber -- -j8 -l8

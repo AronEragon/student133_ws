@@ -1,0 +1,12 @@
+Consolidate compiler generated dependencies of target test_serial_communication_node
+[ 50%] Building CXX object CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp: In member function ‘void TestSerial::timer_callback()’:
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:74: error: expected ‘)’ before ‘;’ token
+   51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+      |                                                                          ^
+/home/robot33-6/student133_ws/src/test_serial_communication/src/test_serial_communication_node.cpp:51:19: note: to match this ‘(’
+   51 |     pot =std::stoi(income_str.substr( income_str.find(","+1, num_lenght));
+      |                   ^
+gmake[2]: *** [CMakeFiles/test_serial_communication_node.dir/build.make:76: CMakeFiles/test_serial_communication_node.dir/src/test_serial_communication_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_serial_communication_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
