@@ -1,0 +1,63 @@
+[0.057s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.169s] Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[0.212s] [ 50%] Built target test_tf_listener_node
+[0.223s] [ 75%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[3.430s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+[3.430s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:52:31: error: no matching function for call to ‘atan(double, double)’
+[3.430s]    52 |         double yaw = std::atan(r_orbit*2*cos(2*theta_orbit), r_orbit*cos(theta_orbit));
+[3.430s]       |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.430s] In file included from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18,
+[3.431s]                  from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[3.431s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[3.432s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[3.432s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[3.432s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[3.432s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.432s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+[3.432s] /usr/include/c++/11/cmath:137:5: note: candidate: ‘template<class _Tp> constexpr typename __gnu_cxx::__enable_if<std::__is_integer<_Tp>::__value, double>::__type std::atan(_Tp)’
+[3.432s]   137 |     atan(_Tp __x)
+[3.433s]       |     ^~~~
+[3.433s] /usr/include/c++/11/cmath:137:5: note:   template argument deduction/substitution failed:
+[3.433s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:52:31: note:   candidate expects 1 argument, 2 provided
+[3.433s]    52 |         double yaw = std::atan(r_orbit*2*cos(2*theta_orbit), r_orbit*cos(theta_orbit));
+[3.433s]       |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3.433s] In file included from /usr/include/features.h:486,
+[3.433s]                  from /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:39,
+[3.434s]                  from /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:586,
+[3.434s]                  from /usr/include/c++/11/csignal:41,
+[3.434s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152,
+[3.434s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+[3.434s] /usr/include/x86_64-linux-gnu/bits/mathcalls.h:57:1: note: candidate: ‘double atan(double)’
+[3.434s]    57 | __MATHCALL_VEC (atan,, (_Mdouble_ __x));
+[3.434s]       | ^~~~~~~~~~~~~~
+[3.435s] /usr/include/x86_64-linux-gnu/bits/mathcalls.h:57:1: note:   candidate expects 1 argument, 2 provided
+[3.435s] In file included from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18,
+[3.435s]                  from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24,
+[3.435s]                  from /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+[3.435s]                  from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50,
+[3.435s]                  from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[3.436s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[3.437s]                  from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+[3.437s] /usr/include/c++/11/cmath:125:3: note: candidate: ‘constexpr float std::atan(float)’
+[3.437s]   125 |   atan(float __x)
+[3.437s]       |   ^~~~
+[3.437s] /usr/include/c++/11/cmath:125:3: note:   candidate expects 1 argument, 2 provided
+[3.437s] /usr/include/c++/11/cmath:129:3: note: candidate: ‘constexpr long double std::atan(long double)’
+[3.438s]   129 |   atan(long double __x)
+[3.438s]       |   ^~~~
+[3.438s] /usr/include/c++/11/cmath:129:3: note:   candidate expects 1 argument, 2 provided
+[4.668s] gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+[4.668s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+[4.669s] gmake: *** [Makefile:146: all] Ошибка 2
+[4.674s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

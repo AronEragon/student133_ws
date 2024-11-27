@@ -1,0 +1,61 @@
+Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[ 50%] Built target test_tf_listener_node
+[ 75%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:52:31: error: no matching function for call to ‘atan(double, double)’
+   52 |         double yaw = std::atan(r_orbit*2*cos(2*theta_orbit), r_orbit*cos(theta_orbit));
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18,
+                 from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+/usr/include/c++/11/cmath:137:5: note: candidate: ‘template<class _Tp> constexpr typename __gnu_cxx::__enable_if<std::__is_integer<_Tp>::__value, double>::__type std::atan(_Tp)’
+  137 |     atan(_Tp __x)
+      |     ^~~~
+/usr/include/c++/11/cmath:137:5: note:   template argument deduction/substitution failed:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:52:31: note:   candidate expects 1 argument, 2 provided
+   52 |         double yaw = std::atan(r_orbit*2*cos(2*theta_orbit), r_orbit*cos(theta_orbit));
+      |                      ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/features.h:486,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:586,
+                 from /usr/include/c++/11/csignal:41,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:57:1: note: candidate: ‘double atan(double)’
+   57 | __MATHCALL_VEC (atan,, (_Mdouble_ __x));
+      | ^~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:57:1: note:   candidate expects 1 argument, 2 provided
+In file included from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:18,
+                 from /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:24,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:1:
+/usr/include/c++/11/cmath:125:3: note: candidate: ‘constexpr float std::atan(float)’
+  125 |   atan(float __x)
+      |   ^~~~
+/usr/include/c++/11/cmath:125:3: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/11/cmath:129:3: note: candidate: ‘constexpr long double std::atan(long double)’
+  129 |   atan(long double __x)
+      |   ^~~~
+/usr/include/c++/11/cmath:129:3: note:   candidate expects 1 argument, 2 provided
+gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

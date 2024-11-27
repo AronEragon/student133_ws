@@ -1,0 +1,12 @@
+[0.037s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.144s] Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[0.203s] [ 25%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[0.240s] [ 75%] Built target test_tf_listener_node
+[3.945s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+[3.945s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:54:9: error: ‘v’ was not declared in this scope
+[3.945s]    54 |         v.setRPY(0, 0, 1.6*2);
+[3.946s]       |         ^
+[5.205s] gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+[5.206s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+[5.206s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.211s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

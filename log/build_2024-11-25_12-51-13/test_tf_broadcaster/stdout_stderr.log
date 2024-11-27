@@ -1,0 +1,10 @@
+Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[ 25%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[ 75%] Built target test_tf_listener_node
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:54:9: error: ‘v’ was not declared in this scope
+   54 |         v.setRPY(0, 0, 1.6*2);
+      |         ^
+gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

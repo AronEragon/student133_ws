@@ -1,0 +1,15 @@
+[0.093s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.250s] Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[0.279s] [ 50%] Built target test_tf_listener_node
+[0.305s] [ 75%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[4.119s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+[4.119s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:46:9: error: expected ‘;’ before ‘q’
+[4.119s]    46 |         q.setRPY(0, 0, rotation*2); //rotation*2
+[4.120s]       |         ^
+[4.120s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:45:15: warning: statement has no effect [-Wunused-value]
+[4.120s]    45 |       rotation*2
+[4.120s]       |       ~~~~~~~~^~
+[5.629s] gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+[5.630s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+[5.630s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.635s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
