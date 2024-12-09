@@ -1,0 +1,14 @@
+/home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp: In constructor ‘TestImageReceiver::TestImageReceiver()’:
+/home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:19:5: error: expected identifier before ‘{’ token
+   19 |     {
+      |     ^
+/home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:21:87: error: ‘image_callback’ is not a member of ‘TestImageReceiver’
+   21 |                                                         std::bind(&TestImageReceiver::image_callback,
+      |                                                                                       ^~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp: In member function ‘void TestImageReceiver::timer_callback(const ConstSharedPtr&)’:
+/home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:34:9: error: ‘image’ was not declared in this scope
+   34 |         image = cv_ptr->image;
+      |         ^~~~~
+gmake[2]: *** [CMakeFiles/test_image_receiver_node.dir/build.make:76: CMakeFiles/test_image_receiver_node.dir/src/test_image_receiver_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_receiver_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

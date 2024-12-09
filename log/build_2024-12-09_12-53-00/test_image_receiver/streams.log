@@ -1,0 +1,11 @@
+[0.070s] Invoking command in '/home/eragon/student133_ws/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_receiver -- -j8 -l8
+[0.198s] Consolidate compiler generated dependencies of target test_image_receiver_node
+[0.296s] [ 50%] Building CXX object CMakeFiles/test_image_receiver_node.dir/src/test_image_receiver_node.cpp.o
+[6.170s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp: In constructor ‘TestImageReceiver::TestImageReceiver()’:
+[6.170s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:21:87: error: ‘image_callback’ is not a member of ‘TestImageReceiver’
+[6.170s]    21 |                                                         std::bind(&TestImageReceiver::image_callback,
+[6.171s]       |                                                                                       ^~~~~~~~~~~~~~
+[7.285s] gmake[2]: *** [CMakeFiles/test_image_receiver_node.dir/build.make:76: CMakeFiles/test_image_receiver_node.dir/src/test_image_receiver_node.cpp.o] Ошибка 1
+[7.285s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_receiver_node.dir/all] Ошибка 2
+[7.286s] gmake: *** [Makefile:146: all] Ошибка 2
+[7.289s] Invoked command in '/home/eragon/student133_ws/build/test_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_receiver -- -j8 -l8

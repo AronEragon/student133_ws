@@ -1,0 +1,1010 @@
+[0.226s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--event-handlers', 'status+', 'console_start_end+', '--cmake-args', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']
+[0.227s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=['status+', 'console_start_end+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x761dd003a7d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x761dd003a320>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x761dd003a320>>, mixin_verb=('build',))
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.556s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.556s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eragon/student133_ws'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore_ament_install'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_pkg']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_pkg'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_meta']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_meta'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ros']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ros'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['cmake', 'python']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'cmake'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['python_setup_py']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python_setup_py'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['ignore', 'ignore_ament_install']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'ignore'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'ignore_ament_install'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['colcon_pkg']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'colcon_pkg'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['colcon_meta']
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'colcon_meta'
+[0.581s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['ros']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'ros'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['cmake', 'python']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'cmake'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'python'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extensions ['python_setup_py']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/sketch_mar26a) by extension 'python_setup_py'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['ignore', 'ignore_ament_install']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'ignore'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'ignore_ament_install'
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['colcon_pkg']
+[0.582s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'colcon_pkg'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['colcon_meta']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'colcon_meta'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['ros']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'ros'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['cmake', 'python']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'cmake'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'python'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extensions ['python_setup_py']
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/us_example) by extension 'python_setup_py'
+[0.583s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.585s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['ignore', 'ignore_ament_install']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ignore'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ignore_ament_install'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['colcon_pkg']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'colcon_pkg'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['colcon_meta']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'colcon_meta'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['ros']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'ros'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['cmake', 'python']
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'cmake'
+[0.586s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'python'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extensions ['python_setup_py']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(sketch_mar26a) by extension 'python_setup_py'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['ignore', 'ignore_ament_install']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ignore_ament_install'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['colcon_pkg']
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'colcon_pkg'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['colcon_meta']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'colcon_meta'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extensions ['ros']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_counter) by extension 'ros'
+[0.593s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_counter' with type 'ros.ament_cmake' and name 'custom_counter'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extension 'ignore'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extension 'ignore_ament_install'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extensions ['colcon_pkg']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extension 'colcon_pkg'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extensions ['colcon_meta']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extension 'colcon_meta'
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extensions ['ros']
+[0.594s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_basic_publisher) by extension 'ros'
+[0.595s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_basic_publisher' with type 'ros.ament_cmake' and name 'test_basic_publisher'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['ignore', 'ignore_ament_install']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ignore'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ignore_ament_install'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['colcon_pkg']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'colcon_pkg'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['colcon_meta']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'colcon_meta'
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extensions ['ros']
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_client) by extension 'ros'
+[0.597s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_client' with type 'ros.ament_cmake' and name 'test_client'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ignore_ament_install'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['colcon_pkg']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'colcon_pkg'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['colcon_meta']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'colcon_meta'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extensions ['ros']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_msg) by extension 'ros'
+[0.600s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_msg' with type 'ros.ament_cmake' and name 'test_custom_msg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ignore_ament_install'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['colcon_pkg']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'colcon_pkg'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'colcon_meta'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_publisher) by extension 'ros'
+[0.602s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_publisher' with type 'ros.ament_cmake' and name 'test_custom_publisher'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['ignore', 'ignore_ament_install']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ignore'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ignore_ament_install'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['colcon_pkg']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'colcon_pkg'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['colcon_meta']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'colcon_meta'
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extensions ['ros']
+[0.603s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_custom_srv) by extension 'ros'
+[0.604s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_custom_srv' with type 'ros.ament_cmake' and name 'test_custom_srv'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['ignore', 'ignore_ament_install']
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ignore'
+[0.604s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ignore_ament_install'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['colcon_pkg']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'colcon_pkg'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['colcon_meta']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'colcon_meta'
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extensions ['ros']
+[0.605s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_parameters) by extension 'ros'
+[0.606s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_parameters' with type 'ros.ament_cmake' and name 'test_parameters'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ignore_ament_install'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_pkg']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_pkg'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['colcon_meta']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'colcon_meta'
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extensions ['ros']
+[0.607s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_pkg) by extension 'ros'
+[0.608s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_pkg' with type 'ros.ament_cmake' and name 'test_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ignore'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ignore_ament_install'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['colcon_pkg']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'colcon_meta'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extensions ['ros']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_publisher) by extension 'ros'
+[0.610s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_publisher' with type 'ros.ament_cmake' and name 'test_publisher'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['ignore', 'ignore_ament_install']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_service) by extension 'ros'
+[0.612s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_service' with type 'ros.ament_cmake' and name 'test_service'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ignore_ament_install'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['colcon_pkg']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'colcon_pkg'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['colcon_meta']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'colcon_meta'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extensions ['ros']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_subscriber) by extension 'ros'
+[0.614s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_subscriber' with type 'ros.ament_cmake' and name 'test_subscriber'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extension 'ignore'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extension 'ignore_ament_install'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extensions ['colcon_pkg']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_tf_broadcaster) by extension 'ros'
+[0.616s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_tf_broadcaster' with type 'ros.ament_cmake' and name 'test_tf_broadcaster'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_visualization) by extension 'ros'
+[0.618s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_visualization' with type 'ros.ament_cmake' and name 'test_visualization'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'colcon_pkg'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['colcon_meta']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'colcon_meta'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(test_arduino_pot) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['ignore', 'ignore_ament_install']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ignore'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ignore_ament_install'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['colcon_pkg']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'ros'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['cmake', 'python']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'cmake'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'python'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extensions ['python_setup_py']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(us_example) by extension 'python_setup_py'
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.682s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.683s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.688s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/eragon/student133_ws/install
+[0.690s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.693s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_target' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_clean_first' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'cmake_force_configure' from command line to 'False'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'ament_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.761s] Level 5:colcon.colcon_core.verb:set package 'custom_counter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.761s] DEBUG:colcon.colcon_core.verb:Building package 'custom_counter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/custom_counter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/custom_counter', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/custom_counter', 'symlink_install': False, 'test_result_base': None}
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_target' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.762s] Level 5:colcon.colcon_core.verb:set package 'test_basic_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.762s] DEBUG:colcon.colcon_core.verb:Building package 'test_basic_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_basic_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_basic_publisher', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_basic_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_target' from command line to 'None'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.763s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.764s] Level 5:colcon.colcon_core.verb:set package 'test_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.764s] DEBUG:colcon.colcon_core.verb:Building package 'test_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_client', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_client', 'symlink_install': False, 'test_result_base': None}
+[0.764s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.764s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_target' from command line to 'None'
+[0.764s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.764s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_clean_first' from command line to 'False'
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'cmake_force_configure' from command line to 'False'
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'ament_cmake_args' from command line to 'None'
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_msg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.765s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_msg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_custom_msg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_custom_msg', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_custom_msg', 'symlink_install': False, 'test_result_base': None}
+[0.765s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_target' from command line to 'None'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.766s] Level 5:colcon.colcon_core.verb:set package 'test_custom_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.766s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_custom_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_custom_publisher', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_custom_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_target' from command line to 'None'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_clean_first' from command line to 'False'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'cmake_force_configure' from command line to 'False'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'ament_cmake_args' from command line to 'None'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.767s] Level 5:colcon.colcon_core.verb:set package 'test_custom_srv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.767s] DEBUG:colcon.colcon_core.verb:Building package 'test_custom_srv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_custom_srv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_custom_srv', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_custom_srv', 'symlink_install': False, 'test_result_base': None}
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_target' from command line to 'None'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_clean_first' from command line to 'False'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'cmake_force_configure' from command line to 'False'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'ament_cmake_args' from command line to 'None'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.768s] Level 5:colcon.colcon_core.verb:set package 'test_parameters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.768s] DEBUG:colcon.colcon_core.verb:Building package 'test_parameters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_parameters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_parameters', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_parameters', 'symlink_install': False, 'test_result_base': None}
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target' from command line to 'None'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.769s] Level 5:colcon.colcon_core.verb:set package 'test_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.769s] DEBUG:colcon.colcon_core.verb:Building package 'test_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_pkg', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_target' from command line to 'None'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.770s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'test_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.771s] DEBUG:colcon.colcon_core.verb:Building package 'test_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_publisher', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.771s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_target' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.772s] Level 5:colcon.colcon_core.verb:set package 'test_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.772s] DEBUG:colcon.colcon_core.verb:Building package 'test_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_service', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_service', 'symlink_install': False, 'test_result_base': None}
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.773s] Level 5:colcon.colcon_core.verb:set package 'test_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.773s] DEBUG:colcon.colcon_core.verb:Building package 'test_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_subscriber', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_target' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_clean_cache' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_clean_first' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'cmake_force_configure' from command line to 'False'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'ament_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'catkin_cmake_args' from command line to 'None'
+[0.774s] Level 5:colcon.colcon_core.verb:set package 'test_tf_broadcaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.774s] DEBUG:colcon.colcon_core.verb:Building package 'test_tf_broadcaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_tf_broadcaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_tf_broadcaster', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_tf_broadcaster', 'symlink_install': False, 'test_result_base': None}
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_target' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_clean_first' from command line to 'False'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'cmake_force_configure' from command line to 'False'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'ament_cmake_args' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.775s] Level 5:colcon.colcon_core.verb:set package 'test_visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.775s] DEBUG:colcon.colcon_core.verb:Building package 'test_visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/student133_ws/build/test_visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/student133_ws/install/test_visualization', 'merge_install': False, 'path': '/home/eragon/student133_ws/src/test_visualization', 'symlink_install': False, 'test_result_base': None}
+[0.776s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.778s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.778s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/custom_counter' with build type 'ament_cmake'
+[0.779s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/custom_counter'
+[0.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.784s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.792s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_basic_publisher' with build type 'ament_cmake'
+[0.792s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_basic_publisher'
+[0.792s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.793s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.800s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_client' with build type 'ament_cmake'
+[0.800s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_client'
+[0.801s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.801s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.809s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_custom_msg' with build type 'ament_cmake'
+[0.809s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_custom_msg'
+[0.809s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.809s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.817s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_custom_publisher' with build type 'ament_cmake'
+[0.817s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_custom_publisher'
+[0.818s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.818s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.825s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_custom_srv' with build type 'ament_cmake'
+[0.826s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_custom_srv'
+[0.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.826s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.834s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_parameters' with build type 'ament_cmake'
+[0.834s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_parameters'
+[0.835s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.835s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.842s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_pkg' with build type 'ament_cmake'
+[0.843s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_pkg'
+[0.843s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.843s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/custom_counter -- -j8 -l8
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_basic_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_basic_publisher -- -j8 -l8
+[0.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_client -- -j8 -l8
+[0.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_msg -- -j8 -l8
+[0.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_publisher -- -j8 -l8
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_srv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_srv -- -j8 -l8
+[0.914s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_parameters -- -j8 -l8
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_pkg -- -j8 -l8
+[1.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_basic_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_basic_publisher -- -j8 -l8
+[1.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/custom_counter -- -j8 -l8
+[1.189s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_client -- -j8 -l8
+[1.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_parameters -- -j8 -l8
+[1.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_pkg -- -j8 -l8
+[1.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_publisher -- -j8 -l8
+[1.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_basic_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_basic_publisher
+[1.305s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/custom_counter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/custom_counter
+[1.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_counter)
+[1.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/custom_counter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/custom_counter
+[1.354s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter' for CMake module files
+[1.355s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter' for CMake config files
+[1.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_counter', 'cmake_prefix_path')
+[1.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.ps1'
+[1.359s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.dsv'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.sh'
+[1.365s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib'
+[1.365s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/bin'
+[1.366s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib/pkgconfig/custom_counter.pc'
+[1.367s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib/python3.10/site-packages'
+[1.368s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/bin'
+[1.368s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.ps1'
+[1.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.dsv'
+[1.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.sh'
+[1.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.bash'
+[1.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.zsh'
+[1.381s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/custom_counter/share/colcon-core/packages/custom_counter)
+[1.388s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_basic_publisher)
+[1.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_basic_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_basic_publisher
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher' for CMake module files
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher' for CMake config files
+[1.393s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_basic_publisher', 'cmake_prefix_path')
+[1.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.ps1'
+[1.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.dsv'
+[1.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.sh'
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib'
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/bin'
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib/pkgconfig/test_basic_publisher.pc'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib/python3.10/site-packages'
+[1.401s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/bin'
+[1.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.ps1'
+[1.403s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.sh'
+[1.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.bash'
+[1.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.zsh'
+[1.409s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_basic_publisher/share/colcon-core/packages/test_basic_publisher)
+[1.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_client
+[1.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_parameters': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_parameters
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_publisher
+[1.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_pkg
+[1.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_client)
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client' for CMake module files
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client' for CMake config files
+[1.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_client', 'cmake_prefix_path')
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.ps1'
+[1.471s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.dsv'
+[1.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_client
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.sh'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib'
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/bin'
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib/pkgconfig/test_client.pc'
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib/python3.10/site-packages'
+[1.477s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/bin'
+[1.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.ps1'
+[1.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_client/share/test_client/package.dsv'
+[1.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.sh'
+[1.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.bash'
+[1.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.zsh'
+[1.485s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_client/share/colcon-core/packages/test_client)
+[1.494s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_publisher)
+[1.495s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher' for CMake module files
+[1.500s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher' for CMake config files
+[1.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_publisher', 'cmake_prefix_path')
+[1.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.ps1'
+[1.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_publisher
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.dsv'
+[1.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.sh'
+[1.511s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/bin'
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib/pkgconfig/test_custom_publisher.pc'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib/python3.10/site-packages'
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/bin'
+[1.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.ps1'
+[1.516s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.dsv'
+[1.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.sh'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.bash'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.zsh'
+[1.522s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_publisher/share/colcon-core/packages/test_custom_publisher)
+[1.531s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_parameters)
+[1.532s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters' for CMake module files
+[1.534s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters' for CMake config files
+[1.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_parameters', 'cmake_prefix_path')
+[1.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.ps1'
+[1.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.dsv'
+[1.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_parameters' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_parameters
+[1.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.sh'
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib'
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/bin'
+[1.546s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib/pkgconfig/test_parameters.pc'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib/python3.10/site-packages'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/bin'
+[1.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.ps1'
+[1.552s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.sh'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.bash'
+[1.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.zsh'
+[1.559s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_parameters/share/colcon-core/packages/test_parameters)
+[1.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_pkg)
+[1.570s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg' for CMake module files
+[1.571s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg' for CMake config files
+[1.572s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'cmake_prefix_path')
+[1.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.ps1'
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.dsv'
+[1.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_pkg
+[1.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.sh'
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib'
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/bin'
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc'
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib/python3.10/site-packages'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/bin'
+[1.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.ps1'
+[1.594s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.dsv'
+[1.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.sh'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.bash'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.zsh'
+[1.606s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_pkg/share/colcon-core/packages/test_pkg)
+[1.617s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_counter)
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter' for CMake module files
+[1.621s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter' for CMake config files
+[1.622s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_counter', 'cmake_prefix_path')
+[1.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.ps1'
+[1.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.dsv'
+[1.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/hook/cmake_prefix_path.sh'
+[1.631s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib'
+[1.634s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/bin'
+[1.634s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib/pkgconfig/custom_counter.pc'
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/lib/python3.10/site-packages'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/custom_counter/bin'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.ps1'
+[1.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.sh'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.bash'
+[1.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/custom_counter/share/custom_counter/package.zsh'
+[1.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/custom_counter/share/colcon-core/packages/custom_counter)
+[1.648s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_publisher' with build type 'ament_cmake'
+[1.650s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_publisher'
+[1.650s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.651s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.666s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_basic_publisher)
+[1.667s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher' for CMake module files
+[1.669s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher' for CMake config files
+[1.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_basic_publisher', 'cmake_prefix_path')
+[1.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.ps1'
+[1.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.dsv'
+[1.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/hook/cmake_prefix_path.sh'
+[1.674s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib'
+[1.674s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/bin'
+[1.674s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib/pkgconfig/test_basic_publisher.pc'
+[1.675s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/lib/python3.10/site-packages'
+[1.675s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_basic_publisher/bin'
+[1.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.ps1'
+[1.677s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.dsv'
+[1.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.sh'
+[1.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.bash'
+[1.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_basic_publisher/share/test_basic_publisher/package.zsh'
+[1.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_basic_publisher/share/colcon-core/packages/test_basic_publisher)
+[1.684s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_service' with build type 'ament_cmake'
+[1.685s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_service'
+[1.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_client)
+[1.695s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client' for CMake module files
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client' for CMake config files
+[1.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_client', 'cmake_prefix_path')
+[1.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.ps1'
+[1.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_client/share/test_client/hook/cmake_prefix_path.sh'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib'
+[1.701s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/bin'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib/pkgconfig/test_client.pc'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/lib/python3.10/site-packages'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_client/bin'
+[1.703s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.ps1'
+[1.704s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_client/share/test_client/package.dsv'
+[1.705s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.sh'
+[1.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.bash'
+[1.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_client/share/test_client/package.zsh'
+[1.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_client/share/colcon-core/packages/test_client)
+[1.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_publisher)
+[1.712s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher' for CMake module files
+[1.713s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher' for CMake config files
+[1.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_publisher', 'cmake_prefix_path')
+[1.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.ps1'
+[1.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.dsv'
+[1.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/hook/cmake_prefix_path.sh'
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib'
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/bin'
+[1.718s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib/pkgconfig/test_custom_publisher.pc'
+[1.719s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/lib/python3.10/site-packages'
+[1.719s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_publisher/bin'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.ps1'
+[1.721s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.dsv'
+[1.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.sh'
+[1.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.bash'
+[1.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_publisher/share/test_custom_publisher/package.zsh'
+[1.726s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_publisher/share/colcon-core/packages/test_custom_publisher)
+[1.726s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_subscriber' with build type 'ament_cmake'
+[1.727s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_subscriber'
+[1.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.737s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_parameters)
+[1.738s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters' for CMake module files
+[1.739s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters' for CMake config files
+[1.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_parameters', 'cmake_prefix_path')
+[1.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.ps1'
+[1.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.dsv'
+[1.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/hook/cmake_prefix_path.sh'
+[1.743s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/bin'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib/pkgconfig/test_parameters.pc'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/lib/python3.10/site-packages'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_parameters/bin'
+[1.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.ps1'
+[1.746s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.dsv'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.sh'
+[1.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.bash'
+[1.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_parameters/share/test_parameters/package.zsh'
+[1.751s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_parameters/share/colcon-core/packages/test_parameters)
+[1.751s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_tf_broadcaster' with build type 'ament_cmake'
+[1.752s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_tf_broadcaster'
+[1.752s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.752s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.772s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/student133_ws/src/test_visualization' with build type 'ament_cmake'
+[1.772s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/student133_ws/src/test_visualization'
+[1.773s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.773s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_publisher -- -j8 -l8
+[1.787s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_pkg)
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg' for CMake module files
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg' for CMake config files
+[1.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_pkg', 'cmake_prefix_path')
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.ps1'
+[1.792s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.dsv'
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/hook/cmake_prefix_path.sh'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/bin'
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib/pkgconfig/test_pkg.pc'
+[1.796s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/lib/python3.10/site-packages'
+[1.797s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_pkg/bin'
+[1.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.ps1'
+[1.799s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.dsv'
+[1.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.sh'
+[1.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.bash'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_pkg/share/test_pkg/package.zsh'
+[1.805s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_pkg/share/colcon-core/packages/test_pkg)
+[1.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_service -- -j8 -l8
+[1.830s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_subscriber -- -j8 -l8
+[1.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[1.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_visualization -- -j8 -l8
+[1.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_publisher -- -j8 -l8
+[2.093s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_subscriber -- -j8 -l8
+[2.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_publisher
+[2.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_visualization -- -j8 -l8
+[2.123s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_service -- -j8 -l8
+[2.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_publisher)
+[2.141s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher' for CMake module files
+[2.142s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher' for CMake config files
+[2.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_publisher
+[2.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_publisher', 'cmake_prefix_path')
+[2.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.dsv'
+[2.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.sh'
+[2.153s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/bin'
+[2.154s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib/pkgconfig/test_publisher.pc'
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib/python3.10/site-packages'
+[2.155s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/bin'
+[2.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.ps1'
+[2.158s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.dsv'
+[2.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.sh'
+[2.161s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.bash'
+[2.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.zsh'
+[2.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_publisher/share/colcon-core/packages/test_publisher)
+[2.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_srv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_srv -- -j8 -l8
+[2.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_subscriber
+[2.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_visualization
+[2.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_service
+[2.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_subscriber)
+[2.245s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber' for CMake module files
+[2.246s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber' for CMake config files
+[2.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_subscriber
+[2.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_subscriber', 'cmake_prefix_path')
+[2.251s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.ps1'
+[2.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.dsv'
+[2.254s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.sh'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib'
+[2.256s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/bin'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib/pkgconfig/test_subscriber.pc'
+[2.257s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib/python3.10/site-packages'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/bin'
+[2.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.ps1'
+[2.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.dsv'
+[2.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.sh'
+[2.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.bash'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.zsh'
+[2.266s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_subscriber/share/colcon-core/packages/test_subscriber)
+[2.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_visualization)
+[2.277s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization' for CMake module files
+[2.282s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization' for CMake config files
+[2.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_visualization', 'cmake_prefix_path')
+[2.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.ps1'
+[2.289s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.dsv'
+[2.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.sh'
+[2.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_custom_msg -- -j8 -l8
+[2.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_visualization
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib'
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/bin'
+[2.296s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib/pkgconfig/test_visualization.pc'
+[2.297s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib/python3.10/site-packages'
+[2.298s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/bin'
+[2.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.ps1'
+[2.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.dsv'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.sh'
+[2.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.bash'
+[2.304s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.zsh'
+[2.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_visualization/share/colcon-core/packages/test_visualization)
+[2.309s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_service)
+[2.309s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service' for CMake module files
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service' for CMake config files
+[2.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_service
+[2.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_service', 'cmake_prefix_path')
+[2.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.ps1'
+[2.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.dsv'
+[2.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.sh'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/bin'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib/pkgconfig/test_service.pc'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib/python3.10/site-packages'
+[2.320s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/bin'
+[2.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.ps1'
+[2.323s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_service/share/test_service/package.dsv'
+[2.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.sh'
+[2.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.bash'
+[2.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.zsh'
+[2.329s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_service/share/colcon-core/packages/test_service)
+[2.336s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_publisher)
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher' for CMake module files
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher' for CMake config files
+[2.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_publisher', 'cmake_prefix_path')
+[2.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.ps1'
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/hook/cmake_prefix_path.sh'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/bin'
+[2.349s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib/pkgconfig/test_publisher.pc'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/lib/python3.10/site-packages'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_publisher/bin'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.ps1'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.dsv'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.sh'
+[2.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.bash'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_publisher/share/test_publisher/package.zsh'
+[2.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_publisher/share/colcon-core/packages/test_publisher)
+[2.364s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_subscriber)
+[2.365s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber' for CMake module files
+[2.366s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber' for CMake config files
+[2.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_subscriber', 'cmake_prefix_path')
+[2.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.ps1'
+[2.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.dsv'
+[2.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/hook/cmake_prefix_path.sh'
+[2.372s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/bin'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib/pkgconfig/test_subscriber.pc'
+[2.373s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/lib/python3.10/site-packages'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_subscriber/bin'
+[2.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.ps1'
+[2.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.dsv'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.sh'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.bash'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_subscriber/share/test_subscriber/package.zsh'
+[2.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_subscriber/share/colcon-core/packages/test_subscriber)
+[2.386s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_visualization)
+[2.387s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization' for CMake module files
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization' for CMake config files
+[2.390s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_visualization', 'cmake_prefix_path')
+[2.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.ps1'
+[2.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.dsv'
+[2.393s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/hook/cmake_prefix_path.sh'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/bin'
+[2.395s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib/pkgconfig/test_visualization.pc'
+[2.396s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/lib/python3.10/site-packages'
+[2.397s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_visualization/bin'
+[2.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.ps1'
+[2.399s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.dsv'
+[2.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.sh'
+[2.402s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.bash'
+[2.403s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_visualization/share/test_visualization/package.zsh'
+[2.404s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_visualization/share/colcon-core/packages/test_visualization)
+[2.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_service)
+[2.415s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service' for CMake module files
+[2.417s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service' for CMake config files
+[2.417s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_service', 'cmake_prefix_path')
+[2.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.ps1'
+[2.420s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.dsv'
+[2.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_service/share/test_service/hook/cmake_prefix_path.sh'
+[2.423s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib'
+[2.423s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/bin'
+[2.423s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib/pkgconfig/test_service.pc'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/lib/python3.10/site-packages'
+[2.424s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_service/bin'
+[2.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.ps1'
+[2.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_service/share/test_service/package.dsv'
+[2.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.sh'
+[2.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.bash'
+[2.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_service/share/test_service/package.zsh'
+[2.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_service/share/colcon-core/packages/test_service)
+[2.438s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_srv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_srv
+[2.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_custom_msg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_msg
+[2.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_srv)
+[2.569s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv' for CMake module files
+[2.575s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv' for CMake config files
+[2.577s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_srv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_srv
+[2.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'cmake_prefix_path')
+[2.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.ps1'
+[2.580s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.dsv'
+[2.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.sh'
+[2.582s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib'
+[2.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'ld_library_path_lib')
+[2.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.ps1'
+[2.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.dsv'
+[2.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.sh'
+[2.586s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/bin'
+[2.586s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib/pkgconfig/test_custom_srv.pc'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib/python3.10/site-packages'
+[2.587s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/bin'
+[2.588s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.ps1'
+[2.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.dsv'
+[2.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.sh'
+[2.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.bash'
+[2.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.zsh'
+[2.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_srv/share/colcon-core/packages/test_custom_srv)
+[2.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_msg)
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg' for CMake module files
+[2.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_custom_msg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_custom_msg
+[2.640s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg' for CMake config files
+[2.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'cmake_prefix_path')
+[2.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.ps1'
+[2.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.dsv'
+[2.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.sh'
+[2.647s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib'
+[2.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'ld_library_path_lib')
+[2.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.ps1'
+[2.649s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.dsv'
+[2.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.sh'
+[2.652s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/bin'
+[2.652s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib/pkgconfig/test_custom_msg.pc'
+[2.653s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib/python3.10/site-packages'
+[2.654s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/bin'
+[2.655s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.ps1'
+[2.657s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.dsv'
+[2.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.sh'
+[2.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.bash'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.zsh'
+[2.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_msg/share/colcon-core/packages/test_custom_msg)
+[2.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_srv)
+[2.797s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv' for CMake module files
+[2.800s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv' for CMake config files
+[2.801s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'cmake_prefix_path')
+[2.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.ps1'
+[2.804s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.dsv'
+[2.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/cmake_prefix_path.sh'
+[2.807s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib'
+[2.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_srv', 'ld_library_path_lib')
+[2.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.ps1'
+[2.810s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.dsv'
+[2.811s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/hook/ld_library_path_lib.sh'
+[2.813s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/bin'
+[2.813s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib/pkgconfig/test_custom_srv.pc'
+[2.814s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/lib/python3.10/site-packages'
+[2.815s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_srv/bin'
+[2.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.ps1'
+[2.818s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.dsv'
+[2.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.sh'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.bash'
+[2.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_srv/share/test_custom_srv/package.zsh'
+[2.827s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_srv/share/colcon-core/packages/test_custom_srv)
+[2.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_custom_msg)
+[2.850s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg' for CMake module files
+[2.852s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg' for CMake config files
+[2.854s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'cmake_prefix_path')
+[2.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.ps1'
+[2.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.dsv'
+[2.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/cmake_prefix_path.sh'
+[2.860s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib'
+[2.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_custom_msg', 'ld_library_path_lib')
+[2.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.ps1'
+[2.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.dsv'
+[2.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/hook/ld_library_path_lib.sh'
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/bin'
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib/pkgconfig/test_custom_msg.pc'
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/lib/python3.10/site-packages'
+[2.867s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_custom_msg/bin'
+[2.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.ps1'
+[2.870s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.dsv'
+[2.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.sh'
+[2.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.bash'
+[2.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_custom_msg/share/test_custom_msg/package.zsh'
+[2.877s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_custom_msg/share/colcon-core/packages/test_custom_msg)
+[11.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[11.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_tf_broadcaster
+[11.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_tf_broadcaster)
+[11.890s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster' for CMake module files
+[11.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/student133_ws/build/test_tf_broadcaster
+[11.891s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster' for CMake config files
+[11.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_tf_broadcaster', 'cmake_prefix_path')
+[11.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.ps1'
+[11.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.dsv'
+[11.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.sh'
+[11.897s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib'
+[11.897s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/bin'
+[11.897s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib/pkgconfig/test_tf_broadcaster.pc'
+[11.898s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib/python3.10/site-packages'
+[11.898s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/bin'
+[11.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.ps1'
+[11.900s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.dsv'
+[11.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.sh'
+[11.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.bash'
+[11.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.zsh'
+[11.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_tf_broadcaster/share/colcon-core/packages/test_tf_broadcaster)
+[11.977s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_tf_broadcaster)
+[11.978s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster' for CMake module files
+[11.979s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster' for CMake config files
+[11.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_tf_broadcaster', 'cmake_prefix_path')
+[11.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.ps1'
+[11.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.dsv'
+[11.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/hook/cmake_prefix_path.sh'
+[11.982s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib'
+[11.982s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/bin'
+[11.983s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib/pkgconfig/test_tf_broadcaster.pc'
+[11.983s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/lib/python3.10/site-packages'
+[11.983s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/student133_ws/install/test_tf_broadcaster/bin'
+[11.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.ps1'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.dsv'
+[11.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.sh'
+[11.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.bash'
+[11.987s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/student133_ws/install/test_tf_broadcaster/share/test_tf_broadcaster/package.zsh'
+[11.988s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/student133_ws/install/test_tf_broadcaster/share/colcon-core/packages/test_tf_broadcaster)
+[11.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.989s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.989s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.989s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[11.998s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[11.998s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[11.998s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[11.998s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.BadAddress: '=' character not found or has no value following it
+[11.999s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[11.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/student133_ws/install/local_setup.ps1'
+[12.002s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/student133_ws/install/_local_setup_util_ps1.py'
+[12.006s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/student133_ws/install/setup.ps1'
+[12.010s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/student133_ws/install/local_setup.sh'
+[12.011s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/student133_ws/install/_local_setup_util_sh.py'
+[12.012s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/student133_ws/install/setup.sh'
+[12.015s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/student133_ws/install/local_setup.bash'
+[12.016s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/student133_ws/install/setup.bash'
+[12.019s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/student133_ws/install/local_setup.zsh'
+[12.020s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/student133_ws/install/setup.zsh'

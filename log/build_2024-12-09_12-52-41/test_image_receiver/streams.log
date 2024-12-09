@@ -1,0 +1,18 @@
+[0.068s] Invoking command in '/home/eragon/student133_ws/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_receiver -- -j8 -l8
+[0.260s] Consolidate compiler generated dependencies of target test_image_receiver_node
+[0.294s] [ 50%] Building CXX object CMakeFiles/test_image_receiver_node.dir/src/test_image_receiver_node.cpp.o
+[5.200s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp: In constructor ‘TestImageReceiver::TestImageReceiver()’:
+[5.200s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:19:5: error: expected identifier before ‘{’ token
+[5.201s]    19 |     {
+[5.201s]       |     ^
+[5.201s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:21:87: error: ‘image_callback’ is not a member of ‘TestImageReceiver’
+[5.201s]    21 |                                                         std::bind(&TestImageReceiver::image_callback,
+[5.201s]       |                                                                                       ^~~~~~~~~~~~~~
+[5.222s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp: In member function ‘void TestImageReceiver::timer_callback(const ConstSharedPtr&)’:
+[5.222s] /home/eragon/student133_ws/src/test_image_receiver/src/test_image_receiver_node.cpp:34:9: error: ‘image’ was not declared in this scope
+[5.222s]    34 |         image = cv_ptr->image;
+[5.222s]       |         ^~~~~
+[6.201s] gmake[2]: *** [CMakeFiles/test_image_receiver_node.dir/build.make:76: CMakeFiles/test_image_receiver_node.dir/src/test_image_receiver_node.cpp.o] Ошибка 1
+[6.201s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_receiver_node.dir/all] Ошибка 2
+[6.202s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.207s] Invoked command in '/home/eragon/student133_ws/build/test_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_receiver -- -j8 -l8

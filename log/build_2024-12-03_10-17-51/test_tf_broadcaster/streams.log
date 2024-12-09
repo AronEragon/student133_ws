@@ -1,0 +1,28 @@
+[0.150s] Invoking command in '/home/eragon/student133_ws/build/test_tf_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8
+[0.393s] Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[0.474s] [ 25%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[0.486s] [ 75%] Built target test_tf_listener_node
+[5.014s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected ‘}’ at end of input
+[5.014s]    73 | }
+[5.014s]       |  ^
+[5.014s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:8:1: note: to match this ‘{’
+[5.015s]     8 | {
+[5.015s]       | ^
+[5.032s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+[5.032s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:69:1: error: a function-definition is not allowed here before ‘{’ token
+[5.033s]    69 | {
+[5.033s]       | ^
+[5.033s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected ‘}’ at end of input
+[5.033s]    73 | }
+[5.033s]       |  ^
+[5.034s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:26:27: note: to match this ‘{’
+[5.034s]    26 |     void timer_callback() {
+[5.034s]       |                           ^
+[5.034s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: At global scope:
+[5.034s] /home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected unqualified-id at end of input
+[5.034s]    73 | }
+[5.035s]       |  ^
+[6.481s] gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+[6.481s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+[6.482s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.487s] Invoked command in '/home/eragon/student133_ws/build/test_tf_broadcaster' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_tf_broadcaster -- -j8 -l8

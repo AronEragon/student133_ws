@@ -1,0 +1,26 @@
+Consolidate compiler generated dependencies of target test_tf_broadcaster_node
+[ 25%] Building CXX object CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o
+[ 75%] Built target test_tf_listener_node
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected ‘}’ at end of input
+   73 | }
+      |  ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:8:1: note: to match this ‘{’
+    8 | {
+      | ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: In member function ‘void TestTfBroadcaster::timer_callback()’:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:69:1: error: a function-definition is not allowed here before ‘{’ token
+   69 | {
+      | ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected ‘}’ at end of input
+   73 | }
+      |  ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:26:27: note: to match this ‘{’
+   26 |     void timer_callback() {
+      |                           ^
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp: At global scope:
+/home/eragon/student133_ws/src/test_tf_broadcaster/src/test_tf_broadcaster_node.cpp:73:2: error: expected unqualified-id at end of input
+   73 | }
+      |  ^
+gmake[2]: *** [CMakeFiles/test_tf_broadcaster_node.dir/build.make:76: CMakeFiles/test_tf_broadcaster_node.dir/src/test_tf_broadcaster_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/test_tf_broadcaster_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2
