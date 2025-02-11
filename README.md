@@ -35,6 +35,8 @@
 ## Litres
 1. [Litres. OpenCV и Java. Обработка изображений и компьютерное зрение.](https://www.litres.ru/book/n-prohorenok/opencv-i-java-obrabotka-izobrazheniy-i-komputernoe-zrenie-39288513/)
 2. [Язык C. Самое необходимое](https://www.litres.ru/book/n-prohorenok/yazyk-c-samoe-neobhodimoe-66338166/)
+3. [Компьютерное зрение на Python. Первые шаги](https://www.litres.ru/book/eduard-danisovich-shakiryanov/komputernoe-zrenie-na-python-pervye-shagi-63606057/)
+4. [Программирование компьютерного зрения на языке Python](https://www.litres.ru/book/erik-solem-yan/programmirovanie-komputernogo-zreniya-na-yazyke-python-22879946/)
 
 ## [Платный курс](https://stepik.org/course/109816/promo)
 
