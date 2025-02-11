@@ -32,6 +32,6 @@
 3. Компьютерное зрение. Современный подход | Форсайт Дэвид, Понс Жан 
 
 
-# Litres
+## Litres
 1. [Litres. OpenCV и Java. Обработка изображений и компьютерное зрение.](https://www.litres.ru/book/n-prohorenok/opencv-i-java-obrabotka-izobrazheniy-i-komputernoe-zrenie-39288513/)
 2. [Язык C. Самое необходимое](https://www.litres.ru/book/n-prohorenok/yazyk-c-samoe-neobhodimoe-66338166/)
