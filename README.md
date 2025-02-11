@@ -10,10 +10,12 @@
 
 
 # Библиотека OpenCV и распознованиее меток (машинное зрение)
-1. https://copter-space.gitbook.io/uchebnik-mashinnoe-zrenie-tom-2/razdel-3/poluchenie-i-obrabotka-izobrazheniya-s-kamery-raspberry-pi
-2. https://vk.com/wall1195598_551
-3. https://github.com/annndruha/ArUco_detection
-4. 
+
+1. https://stepik.org/lesson/652507/step/1?unit=649232
+2. https://copter-space.gitbook.io/uchebnik-mashinnoe-zrenie-tom-2/razdel-3/poluchenie-i-obrabotka-izobrazheniya-s-kamery-raspberry-pi
+3. https://vk.com/wall1195598_551
+4. https://github.com/annndruha/ArUco_detection
+5. https://habr.com/ru/articles/733444/
 
 
 
