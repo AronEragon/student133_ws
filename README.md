@@ -28,5 +28,9 @@
 
 # Доп.
 1. [Распознавание маркеров ArUco. OpenCV. Калибровка камеры. Программа, исходный код.](https://rutube.ru/video/061ade665aa42a61aefaa7a0f01da33c/)
+2. [Перевод книги Learning OpenCV. Computer vision with the OpenCV](https://github.com/ant76/TranslateBookLearningOpenCV/blob/master/Chapter1/DownloadingAndInstallingOpenCV.md)
 
-2. 
+
+# Litres
+1. [Litres. OpenCV и Java. Обработка изображений и компьютерное зрение.](https://www.litres.ru/book/n-prohorenok/opencv-i-java-obrabotka-izobrazheniy-i-komputernoe-zrenie-39288513/)
+2. [Язык C. Самое необходимое](https://www.litres.ru/book/n-prohorenok/yazyk-c-samoe-neobhodimoe-66338166/)
