@@ -1,0 +1,31 @@
+Consolidate compiler generated dependencies of target test_image_processing_node
+[ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   32 |         for(int i =0; i<circles.size();i++) {
+      |                       ~^~~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:36:30: error: ‘Scalar’ was not declared in this scope; did you mean ‘cv::Scalar’?
+   36 |                              Scalar(0,255,0),3);
+      |                              ^~~~~~
+      |                              cv::Scalar
+In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+                 from /usr/include/opencv4/opencv2/core/core.hpp:48,
+                 from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+                 from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+/usr/include/opencv4/opencv2/core/types.hpp:685:25: note: ‘cv::Scalar’ declared here
+  685 | typedef Scalar_<double> Scalar;
+      |                         ^~~~~~
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:34:24: error: ‘Point’ was not declared in this scope; did you mean ‘cv::Point’?
+   34 |                        Point(circles[i][0], circles[i][1],
+      |                        ^~~~~
+      |                        cv::Point
+In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+                 from /usr/include/opencv4/opencv2/core/core.hpp:48,
+                 from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+                 from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+/usr/include/opencv4/opencv2/core/types.hpp:198:17: note: ‘cv::Point’ declared here
+  198 | typedef Point2i Point;
+      |                 ^~~~~
+gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

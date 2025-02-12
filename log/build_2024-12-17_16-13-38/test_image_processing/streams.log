@@ -1,0 +1,33 @@
+[0.047s] Invoking command in '/home/eragon/student133_ws/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8
+[0.175s] Consolidate compiler generated dependencies of target test_image_processing_node
+[0.290s] [ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+[4.852s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+[4.852s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[4.853s]    32 |         for(int i =0; i<circles.size();i++) {
+[4.853s]       |                       ~^~~~~~~~~~~~~~~
+[4.854s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:36:30: error: ‘Scalar’ was not declared in this scope; did you mean ‘cv::Scalar’?
+[4.854s]    36 |                              Scalar(0,255,0),3);
+[4.854s]       |                              ^~~~~~
+[4.854s]       |                              cv::Scalar
+[4.854s] In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+[4.854s]                  from /usr/include/opencv4/opencv2/core/core.hpp:48,
+[4.855s]                  from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+[4.855s]                  from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+[4.855s] /usr/include/opencv4/opencv2/core/types.hpp:685:25: note: ‘cv::Scalar’ declared here
+[4.855s]   685 | typedef Scalar_<double> Scalar;
+[4.855s]       |                         ^~~~~~
+[4.856s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:34:24: error: ‘Point’ was not declared in this scope; did you mean ‘cv::Point’?
+[4.856s]    34 |                        Point(circles[i][0], circles[i][1],
+[4.856s]       |                        ^~~~~
+[4.856s]       |                        cv::Point
+[4.856s] In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+[4.857s]                  from /usr/include/opencv4/opencv2/core/core.hpp:48,
+[4.857s]                  from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+[4.857s]                  from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+[4.857s] /usr/include/opencv4/opencv2/core/types.hpp:198:17: note: ‘cv::Point’ declared here
+[4.857s]   198 | typedef Point2i Point;
+[4.857s]       |                 ^~~~~
+[5.940s] gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+[5.940s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+[5.941s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.947s] Invoked command in '/home/eragon/student133_ws/build/test_image_processing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8

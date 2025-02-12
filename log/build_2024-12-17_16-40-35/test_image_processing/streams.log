@@ -1,0 +1,11 @@
+[0.068s] Invoking command in '/home/eragon/student133_ws/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8
+[0.266s] Consolidate compiler generated dependencies of target test_image_processing_node
+[0.314s] [ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+[1.017s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:6:10: fatal error: opencv4/opencv.hpp: Нет такого файла или каталога
+[1.017s]     6 | #include <opencv4/opencv.hpp>
+[1.018s]       |          ^~~~~~~~~~~~~~~~~~~~
+[1.019s] compilation terminated.
+[1.034s] gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+[1.035s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+[1.035s] gmake: *** [Makefile:146: all] Ошибка 2
+[1.063s] Invoked command in '/home/eragon/student133_ws/build/test_image_processing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8

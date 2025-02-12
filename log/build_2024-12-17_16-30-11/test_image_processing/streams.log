@@ -1,0 +1,38 @@
+[0.065s] Invoking command in '/home/eragon/student133_ws/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8
+[0.126s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.534s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.685s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.686s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.686s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.687s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.724s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.798s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.801s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.052s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.207s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.278s] -- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+[1.324s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.492s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.492s] -- Configured cppcheck include dirs: /home/eragon/student133_ws/src/test_image_processing/include
+[1.492s] -- Configured cppcheck exclude dirs and/or files: 
+[1.493s] -- Added test 'lint_cmake' to check CMake code style
+[1.495s] -- Added test 'uncrustify' to check C / C++ code style
+[1.495s] -- Configured uncrustify additional arguments: 
+[1.495s] -- Added test 'xmllint' to check XML markup files
+[1.497s] -- Configuring done
+[1.553s] -- Generating done
+[1.592s] -- Build files have been written to: /home/eragon/student133_ws/build/test_image_processing
+[1.602s] Consolidate compiler generated dependencies of target test_image_processing_node
+[1.630s] [ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+[5.880s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+[5.880s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:28:13: error: ‘cvColor’ is not a member of ‘cv’; did you mean ‘cvtColor’?
+[5.880s]    28 |         cv::cvColor(image, image_gray, cv::COLOR_BGR2GRAY);
+[5.880s]       |             ^~~~~~~
+[5.880s]       |             cvtColor
+[5.883s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[5.883s]    32 |         for(int i = 0; i < circles.size();i++) {
+[5.884s]       |                        ~~^~~~~~~~~~~~~~~~
+[6.945s] gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+[6.946s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+[6.947s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.952s] Invoked command in '/home/eragon/student133_ws/build/test_image_processing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8

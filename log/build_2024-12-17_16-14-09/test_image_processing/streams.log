@@ -1,0 +1,22 @@
+[0.067s] Invoking command in '/home/eragon/student133_ws/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8
+[0.205s] Consolidate compiler generated dependencies of target test_image_processing_node
+[0.292s] [ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+[5.234s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+[5.234s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+[5.234s]    32 |         for(int i =0; i<circles.size();i++) {
+[5.235s]       |                       ~^~~~~~~~~~~~~~~
+[5.235s] /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:34:24: error: ‘Point’ was not declared in this scope; did you mean ‘cv::Point’?
+[5.236s]    34 |                        Point(circles[i][0], circles[i][1],
+[5.236s]       |                        ^~~~~
+[5.236s]       |                        cv::Point
+[5.236s] In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+[5.236s]                  from /usr/include/opencv4/opencv2/core/core.hpp:48,
+[5.236s]                  from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+[5.237s]                  from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+[5.237s] /usr/include/opencv4/opencv2/core/types.hpp:198:17: note: ‘cv::Point’ declared here
+[5.237s]   198 | typedef Point2i Point;
+[5.237s]       |                 ^~~~~
+[6.335s] gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+[6.336s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+[6.336s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.342s] Invoked command in '/home/eragon/student133_ws/build/test_image_processing' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/test_image_processing -- -j8 -l8

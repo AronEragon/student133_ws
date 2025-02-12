@@ -1,0 +1,13 @@
+Consolidate compiler generated dependencies of target pointcloud_node
+[ 50%] Building CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp: In member function ‘void LabPointCloud::timer_callback()’:
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:45:27: warning: unused variable ‘tu’ [-Wunused-variable]
+   45 |                     float tu = distance;
+      |                           ^~
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:48:32: error: ‘tu’ was not declared in this scope; did you mean ‘tm’?
+   48 |                     distance = tu;
+      |                                ^~
+      |                                tm
+gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

@@ -1,0 +1,11 @@
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:28:13: error: ‘cvColor’ is not a member of ‘cv’; did you mean ‘cvtColor’?
+   28 |         cv::cvColor(image, image_gray, cv::COLOR_BGR2GRAY);
+      |             ^~~~~~~
+      |             cvtColor
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   32 |         for(int i = 0; i < circles.size();i++) {
+      |                        ~~^~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

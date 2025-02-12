@@ -1,0 +1,16 @@
+[0.056s] Invoking command in '/home/eragon/student133_ws/build/circle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eragon/student133_ws/install/test_image_sender:/home/eragon/student133_ws/install/test_image_receiver:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/circle_detector -- -j8 -l8
+[0.172s] Consolidate compiler generated dependencies of target circle_detector_node
+[0.196s] [ 50%] Building CXX object CMakeFiles/circle_detector_node.dir/src/circle_detector_node.cpp.o
+[4.884s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp: In member function ‘void CircleDetectorNode::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)’:
+[4.884s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp:83:33: error: ‘largest_circle’ was not declared in this scope; did you mean ‘largest_circle_image’?
+[4.885s]    83 |                 if (circle[2] > largest_circle[2])
+[4.885s]       |                                 ^~~~~~~~~~~~~~
+[4.885s]       |                                 largest_circle_image
+[4.895s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp:90:17: error: ‘largest_circle’ was not declared in this scope; did you mean ‘largest_circle_image’?
+[4.896s]    90 |             if (largest_circle[2] >= 20 && largest_circle[2] <= 200)
+[4.896s]       |                 ^~~~~~~~~~~~~~
+[4.896s]       |                 largest_circle_image
+[8.744s] gmake[2]: *** [CMakeFiles/circle_detector_node.dir/build.make:76: CMakeFiles/circle_detector_node.dir/src/circle_detector_node.cpp.o] Ошибка 1
+[8.744s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/circle_detector_node.dir/all] Ошибка 2
+[8.744s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.749s] Invoked command in '/home/eragon/student133_ws/build/circle_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/eragon/student133_ws/install/test_image_sender:/home/eragon/student133_ws/install/test_image_receiver:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/circle_detector -- -j8 -l8

@@ -1,0 +1,28 @@
+[0.046s] Invoking command in '/home/eragon/student133_ws/build/l2_image_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/l2_image_detector -- -j8 -l8
+[0.132s] Consolidate compiler generated dependencies of target l2_image_detector_node
+[0.176s] [ 50%] Building CXX object CMakeFiles/l2_image_detector_node.dir/src/l2_image_detector_node.cpp.o
+[6.055s] /home/eragon/student133_ws/src/l2_image_detector/src/l2_image_detector_node.cpp: In member function ‘void CircleDetector::image_callback(const ConstSharedPtr&)’:
+[6.056s] /home/eragon/student133_ws/src/l2_image_detector/src/l2_image_detector_node.cpp:66:20: error: ‘class cv_bridge::CvImage’ has no member named ‘encodeToCompressedImgmsg’
+[6.056s]    66 |             cv_img.encodeToCompressedImgmsg("png", img_msg);
+[6.056s]       |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+[6.056s] /home/eragon/student133_ws/src/l2_image_detector/src/l2_image_detector_node.cpp:68:30: error: no matching function for call to ‘image_transport::Publisher::publish(sensor_msgs::msg::CompressedImage&)’
+[6.056s]    68 |             pub_image.publish(img_msg);
+[6.057s]       |             ~~~~~~~~~~~~~~~~~^~~~~~~~~
+[6.057s] In file included from /opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:41,
+[6.057s]                  from /home/eragon/student133_ws/src/l2_image_detector/src/l2_image_detector_node.cpp:4:
+[6.057s] /opt/ros/humble/include/image_transport/image_transport/publisher.hpp:97:8: note: candidate: ‘void image_transport::Publisher::publish(const Image&) const’
+[6.057s]    97 |   void publish(const sensor_msgs::msg::Image & message) const;
+[6.057s]       |        ^~~~~~~
+[6.058s] /opt/ros/humble/include/image_transport/image_transport/publisher.hpp:97:48: note:   no known conversion for argument 1 from ‘sensor_msgs::msg::CompressedImage’ {aka ‘sensor_msgs::msg::CompressedImage_<std::allocator<void> >’} to ‘const Image&’ {aka ‘const sensor_msgs::msg::Image_<std::allocator<void> >&’}
+[6.058s]    97 |   void publish(const sensor_msgs::msg::Image & message) const;
+[6.058s]       |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[6.058s] /opt/ros/humble/include/image_transport/image_transport/publisher.hpp:103:8: note: candidate: ‘void image_transport::Publisher::publish(const ConstSharedPtr&) const’
+[6.058s]   103 |   void publish(const sensor_msgs::msg::Image::ConstSharedPtr & message) const;
+[6.058s]       |        ^~~~~~~
+[6.059s] /opt/ros/humble/include/image_transport/image_transport/publisher.hpp:103:64: note:   no known conversion for argument 1 from ‘sensor_msgs::msg::CompressedImage’ {aka ‘sensor_msgs::msg::CompressedImage_<std::allocator<void> >’} to ‘const ConstSharedPtr&’ {aka ‘const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&’}
+[6.059s]   103 |   void publish(const sensor_msgs::msg::Image::ConstSharedPtr & message) const;
+[6.059s]       |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+[7.924s] gmake[2]: *** [CMakeFiles/l2_image_detector_node.dir/build.make:76: CMakeFiles/l2_image_detector_node.dir/src/l2_image_detector_node.cpp.o] Ошибка 1
+[7.925s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/l2_image_detector_node.dir/all] Ошибка 2
+[7.926s] gmake: *** [Makefile:146: all] Ошибка 2
+[7.931s] Invoked command in '/home/eragon/student133_ws/build/l2_image_detector' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/l2_image_detector -- -j8 -l8

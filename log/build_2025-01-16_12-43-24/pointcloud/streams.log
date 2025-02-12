@@ -1,0 +1,29 @@
+[0.080s] Invoking command in '/home/eragon/student133_ws/build/pointcloud': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/pointcloud -- -j8 -l8
+[0.283s] [ 50%] Building CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o
+[6.470s] /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp: In member function ‘void LabPointCloud::timer_callback()’:
+[6.470s] /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:45:27: warning: unused variable ‘min’ [-Wunused-variable]
+[6.470s]    45 |                     float min = distance;
+[6.471s]       |                           ^~~
+[6.471s] /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:48:32: error: ‘min’ was not declared in this scope
+[6.471s]    48 |                     distance = min;
+[6.471s]       |                                ^~~
+[6.480s] /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:48:32: note: suggested alternatives:
+[6.482s] In file included from /usr/include/c++/11/algorithm:62,
+[6.482s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,
+[6.482s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+[6.482s]                  from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+[6.482s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+[6.483s]                  from /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:1:
+[6.483s] /usr/include/c++/11/bits/stl_algo.h:3455:5: note:   ‘std::min’
+[6.483s]  3455 |     min(initializer_list<_Tp> __l, _Compare __comp)
+[6.483s]       |     ^~~
+[6.483s] In file included from /usr/include/opencv4/opencv2/core/core.hpp:48,
+[6.483s]                  from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+[6.484s]                  from /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:4:
+[6.484s] /usr/include/opencv4/opencv2/core.hpp:1446:17: note:   ‘cv::min’
+[6.484s]  1446 | CV_EXPORTS void min(const UMat& src1, const UMat& src2, UMat& dst);
+[6.484s]       |                 ^~~
+[8.354s] gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Ошибка 1
+[8.354s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_node.dir/all] Ошибка 2
+[8.355s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.359s] Invoked command in '/home/eragon/student133_ws/build/pointcloud' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/pointcloud -- -j8 -l8

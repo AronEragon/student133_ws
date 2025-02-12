@@ -1,0 +1,8 @@
+/home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp: In member function ‘void CircleDetectorNode::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)’:
+/home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp:90:17: error: ‘largest_circle’ was not declared in this scope; did you mean ‘largest_circle_image’?
+   90 |             if (largest_circle[2] >= 20 && largest_circle[2] <= 200)
+      |                 ^~~~~~~~~~~~~~
+      |                 largest_circle_image
+gmake[2]: *** [CMakeFiles/circle_detector_node.dir/build.make:76: CMakeFiles/circle_detector_node.dir/src/circle_detector_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/circle_detector_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

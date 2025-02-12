@@ -1,0 +1,15 @@
+[0.072s] Invoking command in '/home/eragon/student133_ws/build/circle_detector': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/student133_ws/build/circle_detector -- -j8 -l8
+[0.179s] Consolidate compiler generated dependencies of target circle_detector_node
+[0.253s] [ 50%] Building CXX object CMakeFiles/circle_detector_node.dir/src/circle_detector_node.cpp.o
+[5.572s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp: In member function ‘void CircleDetectorNode::image_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)’:
+[5.572s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp:83:33: error: ‘largest_circle’ was not declared in this scope; did you mean ‘largest_circle_image’?
+[5.572s]    83 |                 if (circle[2] > largest_circle[2])
+[5.572s]       |                                 ^~~~~~~~~~~~~~
+[5.573s]       |                                 largest_circle_image
+[5.585s] /home/eragon/student133_ws/src/circle_detector/src/circle_detector_node.cpp:90:17: error: ‘largest_circle’ was not declared in this scope; did you mean ‘largest_circle_image’?
+[5.586s]    90 |             if (largest_circle[2] >= 20 && largest_circle[2] <= 200)
+[5.586s]       |                 ^~~~~~~~~~~~~~
+[5.586s]       |                 largest_circle_image
+[9.486s] gmake[2]: *** [CMakeFiles/circle_detector_node.dir/build.make:76: CMakeFiles/circle_detector_node.dir/src/circle_detector_node.cpp.o] Ошибка 1
+[9.486s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/circle_detector_node.dir/all] Ошибка 2
+[9.487s] gmake: *** [Makefile:146: all] Ошибка 2

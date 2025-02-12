@@ -1,0 +1,44 @@
+Consolidate compiler generated dependencies of target test_image_processing_node
+[ 50%] Building CXX object CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSensor::TestImageSensor()’:
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:32:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   32 |         for(int i = 0; i < circles.size();i++) {
+      |                        ~~^~~~~~~~~~~~~~~~
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:33:17: error: ‘circles’ is not a member of ‘cv’; did you mean ‘circle’?
+   33 |             cv::circles(image,
+      |                 ^~~~~~~
+      |                 circle
+/home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:36:50: error: no matching function for call to ‘cv::Point_<int>::Point_(float&, float&, float&, cv::Scalar, int)’
+   36 |                             cv::Scalar(0,255,0),3);
+      |                                                  ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:57,
+                 from /usr/include/opencv4/opencv2/core/core.hpp:48,
+                 from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+                 from /home/eragon/student133_ws/src/test_image_processing/src/test_image_processing_node.cpp:4:
+/usr/include/opencv4/opencv2/core/types.hpp:1196:1: note: candidate: ‘cv::Point_<_Tp>::Point_(const cv::Vec<_Tp, 2>&) [with _Tp = int]’
+ 1196 | Point_<_Tp>::Point_(const Vec<_Tp,2>& v)
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1196:1: note:   candidate expects 1 argument, 5 provided
+/usr/include/opencv4/opencv2/core/types.hpp:1192:1: note: candidate: ‘cv::Point_<_Tp>::Point_(const cv::Size_<_Tp>&) [with _Tp = int]’
+ 1192 | Point_<_Tp>::Point_(const Size_<_Tp>& sz)
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1192:1: note:   candidate expects 1 argument, 5 provided
+/usr/include/opencv4/opencv2/core/types.hpp:1188:1: note: candidate: ‘cv::Point_<_Tp>::Point_(cv::Point_<_Tp>&&) [with _Tp = int]’
+ 1188 | Point_<_Tp>::Point_(Point_&& pt) CV_NOEXCEPT
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1188:1: note:   candidate expects 1 argument, 5 provided
+/usr/include/opencv4/opencv2/core/types.hpp:1184:1: note: candidate: ‘cv::Point_<_Tp>::Point_(const cv::Point_<_Tp>&) [with _Tp = int]’
+ 1184 | Point_<_Tp>::Point_(const Point_& pt)
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1184:1: note:   candidate expects 1 argument, 5 provided
+/usr/include/opencv4/opencv2/core/types.hpp:1180:1: note: candidate: ‘cv::Point_<_Tp>::Point_(_Tp, _Tp) [with _Tp = int]’
+ 1180 | Point_<_Tp>::Point_(_Tp _x, _Tp _y)
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1180:1: note:   candidate expects 2 arguments, 5 provided
+/usr/include/opencv4/opencv2/core/types.hpp:1176:1: note: candidate: ‘cv::Point_<_Tp>::Point_() [with _Tp = int]’
+ 1176 | Point_<_Tp>::Point_()
+      | ^~~~~~~~~~~
+/usr/include/opencv4/opencv2/core/types.hpp:1176:1: note:   candidate expects 0 arguments, 5 provided
+gmake[2]: *** [CMakeFiles/test_image_processing_node.dir/build.make:76: CMakeFiles/test_image_processing_node.dir/src/test_image_processing_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_image_processing_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

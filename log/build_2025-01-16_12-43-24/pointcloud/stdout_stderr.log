@@ -1,0 +1,27 @@
+[ 50%] Building CXX object CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp: In member function ‘void LabPointCloud::timer_callback()’:
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:45:27: warning: unused variable ‘min’ [-Wunused-variable]
+   45 |                     float min = distance;
+      |                           ^~~
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:48:32: error: ‘min’ was not declared in this scope
+   48 |                     distance = min;
+      |                                ^~~
+/home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:48:32: note: suggested alternatives:
+In file included from /usr/include/c++/11/algorithm:62,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21,
+                 from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155,
+                 from /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:1:
+/usr/include/c++/11/bits/stl_algo.h:3455:5: note:   ‘std::min’
+ 3455 |     min(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+In file included from /usr/include/opencv4/opencv2/core/core.hpp:48,
+                 from /opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43,
+                 from /home/eragon/student133_ws/src/pointcloud/src/pointcloud_node.cpp:4:
+/usr/include/opencv4/opencv2/core.hpp:1446:17: note:   ‘cv::min’
+ 1446 | CV_EXPORTS void min(const UMat& src1, const UMat& src2, UMat& dst);
+      |                 ^~~
+gmake[2]: *** [CMakeFiles/pointcloud_node.dir/build.make:76: CMakeFiles/pointcloud_node.dir/src/pointcloud_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pointcloud_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2
