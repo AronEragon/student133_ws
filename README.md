@@ -2,7 +2,7 @@
 
 # ROS2
 ## Ссылки
-1. https://github.com/AronEragon/student133_ws/edit/main/README.md
+1. [Обнаружение и декодирование QR-кода на изображении с помощью OpenCV](https://lindevs.com/detect-and-decode-qr-code-in-image-using-opencv)
 2. https://clover.coex.tech/ru/aruco_map.html
 3. https://habr.com/ru/articles/482220/
 4. https://elar.urfu.ru/bitstream/10995/78807/1/fti_2019_013.pdf
